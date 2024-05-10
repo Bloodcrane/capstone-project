@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import React, { Suspense, lazy } from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from "./Pages/Login.jsx";
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const AdminPage = lazy(() => import('./Pages/Admin.jsx'));
+const HomePage = lazy(() => import('./Pages/Home.jsx'));
+
+const App = () => (
+  <Router basename={process.env.PUBLIC_URL}>
+    <Suspense fallback={"Loading..."}>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="login" element={<Login />} />
+        <Route path="admin" element={<AdminPage />} />
+      </Routes>
+    </Suspense>
+  </Router>
+);
 
 export default App;

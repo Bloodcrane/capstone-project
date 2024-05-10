@@ -1,38 +1,221 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
+
+::-webkit-scrollbar-track {
+  /* Properties for the scrollbar track */
+  background-color: #070707; /* Example color */
+}
+
+body{
   text-align: center;
+  background-color: #FFF7E6;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.midSection {
+  background-color: #ffffff;
+  padding: 200px 0px 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.RTitle {
+  text-align: left;
+  color: #244135;
+  margin: 50px 65px 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardSection {
+  flex-direction: row;
+  display: flex;
+  margin-top: 15px;
+  margin-left: 65px;
+  margin-right: 65px;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.room-card {
+  width: 300px;
+  height: 370px;
+  padding: 30px 16px;
+  background-color: #FFF7E6;
+  outline-color: #24413518;
+  outline-width: 1px;
+  outline-style: groove;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 25px;
+  overflow: hidden;
+  box-shadow: 0px 5px 5px #0707076c;
+}
+
+.room-image {
+  width: 260px;
+  height: 270px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 5px #1a472b6c;
+}
+
+.room-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+}
+
+.room-info {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 25px;
+}
+
+.room-type {
+  font-size: 18px;
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  color: #244135;
+  word-wrap: break-word;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+}
+
+.starting-from {
+  font-size: 14px;
+  font-family: 'Fira Sans';
+  font-weight: 400;
+  color: #244135;
+  word-wrap: break-word;
+  margin-right: 5px;
+}
+
+.price-value {
+  font-size: 20px;
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  color: #244135;
+  word-wrap: break-word;
+}
+
+.room-amenities {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.area {
+  text-align: right;
+  font-weight: 430;
+}
+
+.guests {
+  align-self: left;
+  margin: -10px 0px 0px;
+  background-image: url("./Styles/Images/Guests.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 15px 15px 15px;
+}
+
+.separator {
+  background-image: url("./Styles/Images/DividerN.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 35px 15px 15px;
+}
+
+.comingSoon {
+  background-image: url("./Styles/Images/cottage.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  padding: 100px 100px 100px;
   color: white;
+  text-align: left;
 }
 
-.App-link {
-  color: #61dafb;
+.comingSoon h1 {
+  font-size: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.aboutFamily {
+  padding: 20px 100px 20px;
+  color: #244135;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-shadow: 3px 3px 5px #07070756;
 }
+
+.aboutFamily-img {
+  text-align: left;
+  height: 340px;
+  box-shadow: 5px 5px 5px #07070765;
+  border-radius: 5px;
+
+  outline-color: #0000002f;
+  outline-width: 1px;
+  outline-style: groove;
+}
+
+.aboutFamily-title {
+  text-align: left;
+}
+
+.aboutFamily-history {
+  margin-top: 20px;
+  text-align: left;
+  margin-left: 30px;
+  line-height: 1.5;
+
+  font-family: "Italianno", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.activities-desktop {
+  padding: 30px 300px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.activities-desktop img {
+  height: 250px;
+  width: 250px;
+  image-rendering:optimizeQuality;
+  opacity: 80%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.activities-desktop img:hover {
+  opacity: 100%;
+}
+
+.activities-desktop img:nth-child(2),
+.activities-desktop img:nth-child(5) {
+  margin-top: 0px;
+}
+

@@ -1,0 +1,126 @@
+  /* COMPUTER SCREEN CSS */
+
+.topSection-pc {
+    background-image: url('../Styles/Images/Background_Home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    position:sticky;
+    padding: 200px 0px 200px;
+    text-align: center;
+  }
+
+.homeTop-pc {
+    justify-content: center;
+  }
+  
+  .home-btn-pc {
+    margin-top: 20px;
+    border-style: none;
+    padding: 20px 80px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    background-color: #75904F;
+    color: #ffffff;
+    box-shadow: 0px 5px 5px #0707076c;
+    transition: all 0.3s;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+  
+  .home-btn-pc:hover {
+    background-color: #244135;
+  }
+  
+  .home-btn-pc:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 5px #0707076c;
+}
+  
+  .home-title-pc {
+    font-size: 60px;
+  }
+  
+  .home-dsc-pc {
+    font-size: 19px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -30px;
+    margin-right: 300px;
+  }
+
+
+
+
+  /* MOBILE SCREEN CSS */
+
+
+  .topSection-mobile {
+    background-image: url('../Styles/Images/Background_Home_2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    position:sticky;
+    padding: 100px 0px 100px;
+    text-align: center;
+  }
+
+.homeTop-mobile {
+    justify-content: center;
+  }
+  
+  .home-btn-mobile {
+    margin-top: 20px;
+    border-style: none;
+    padding: 20px 80px 20px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    background-color: #75904F;
+    color: #ffffff;
+    box-shadow: 0px 5px 5px #0707076c;
+    transition: all 0.3s;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+}
+  
+  .home-btn-mobile:hover {
+    background-color: #244135;
+  }
+  
+  .home-btn-mobile:active {
+    transform: translateY(2px);
+    box-shadow: 0px 0px 5px #0707076c;
+}
+  
+  .home-title-mobile {
+    font-size: 40px;
+    color: #244135;
+  }
+  
+  .home-dsc-mobile {
+    font-size: 19px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-top: 0px;
+    color: #244135;
+  }
