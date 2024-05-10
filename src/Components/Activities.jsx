@@ -18,18 +18,49 @@ const Activities = () => {
             {/* Desktop Structure */}
             {isDesktopOrLaptop && <>
                 <div className='activities-desktop'>
-                    <img src={fishing} alt=''></img>
-                    <img src={museum} alt=''></img>
-                    <img src={hiking} alt=''></img>
-                    <img src={harvesting} alt=''></img>
-                    <img src={cooking} alt=''></img>
-                    <img src={riding} alt=''></img>
+                    <div style={{backgroundImage: `url(${fishing})`}}>
+                        <p>Fishing</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${museum})`}}>
+                        <p>Museum</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${hiking})`}}>
+                        <p>Hiking</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${harvesting})`}}>
+                        <p>Harvesting</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${cooking})`}}>
+                        <p>Cooking Masterclass</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${riding})`}}>
+                        <p>Horseback Riding</p>
+                    </div>
                 </div>
             </>}
 
             {/* Mobile Structure */}
             {isTabletOrMobile && <>
-
+                <div className='activities-mobile'>
+                    <div style={{backgroundImage: `url(${fishing})`}}>
+                        <p>Fishing</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${museum})`}}>
+                        <p>Museum</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${hiking})`}}>
+                        <p>Hiking</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${harvesting})`}}>
+                        <p>Harvesting</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${cooking})`}}>
+                        <p>Cooking Masterclass</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${riding})`}}>
+                        <p>Horseback Riding</p>
+                    </div>
+                </div>
             </>}
         </div>
     )

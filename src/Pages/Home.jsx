@@ -20,7 +20,7 @@ const Home = () => {
         <div>
             <HomeTopSection/>
             <HeaderNav/>
-            {isDesktopOrLaptop && <RoomsSection/>}
+            <RoomsSection/>
             <div className="separator"></div>
             <div className="comingSoon"><h2>Discover Our Sustainable Cottages Opening June 2024</h2> <h1>Coming Soon!</h1></div>
             <About/>

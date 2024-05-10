@@ -1,0 +1,39 @@
+.scrollButton {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .left {
+    left: 10px;
+  }
+  
+  .right {
+    right: 10px;
+  }
+  
+  /* Style for the mobile container */
+  .mobileContainer {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 20px; /* Space for the scroll buttons */
+  }
+  
+  /* Hide horizontal scrollbar */
+  .mobileContainer::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Style for the Cards */
+  .card {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust as needed */
+    margin-right: 10px; /* Adjust spacing between cards */
+  }
