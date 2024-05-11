@@ -1,6 +1,6 @@
 import HomePage from "./Pages/Home"
 import AdminPage from "./Pages/Admin"
-import Unauthorized from "./Pages/Unauthorized"
+import LoginPage from "./Pages/Login"
 
 const routers = [
     {
@@ -10,11 +10,11 @@ const routers = [
     },
     {
         element: <AdminPage/>,
-        path: '/login'
+        path: '/admin'
     },
     {
-        element: <Unauthorized/>,
-        path: '/unauthorized'
+        element: <LoginPage/>,
+        path: '/login'
     }
 ]
 
