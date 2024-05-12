@@ -13,3 +13,30 @@ body{
   transition: all 0.3s;
   overflow-x: hidden;
 }
+
+.separator {
+  background-image: url("./Styles/Images/DividerN.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 35px 15px 15px;
+}
+
+.comingSoon {
+  background-image: url("./Styles/Images/cottage.png");
+  background-repeat: repeat-x;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  color: white;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.comingSoonContent {
+  margin-left: 20px;
+}
+
+.comingSoon h1 {
+  font-size: 35px;
+}

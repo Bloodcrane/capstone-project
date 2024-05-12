@@ -1,62 +1,31 @@
-.scrollButton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .left {
-    left: 10px;
-  }
-  
-  .right {
-    right: 10px;
-  }
-
-  /* Style for the Cards */
-  .card {
-    flex: 0 0 auto;
-    width: 200px; /* Adjust as needed */
-    margin-right: 10px; /* Adjust spacing between cards */
-  }
-
-
-
-
-
-  .midSection {
+.midSection {
     background-color: #ffffff;
     padding: 200px 0px 200px;
-  }
-  
-  .RTitle {
+}
+
+.RTitle {
     text-align: left;
     color: #244135;
     margin: 50px 65px 15px;
-  }
-  
-  .cardSection-desktop {
+}
+
+.cardSection-desktop {
     flex-direction: row;
     display: flex;
     justify-content: space-evenly;
     margin-top: 40px;
     margin-bottom: 60px;
-  }
+}
 
-  .cardSection-mobile {
+.cardSection-mobile {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     margin-top: 40px;
     margin-bottom: 60px;
-  }
+}
 
-  .room-card-desktop {
+.room-card-desktop {
     display: flex;
     width: 300px;
     height: 500px;
@@ -73,9 +42,9 @@
     gap: 25px;
     overflow: hidden;
     box-shadow: 0px 5px 5px #0707076c;
-  }
+}
 
-  .room-card-mobile {
+.room-card-mobile {
     display: flex;
     width: 300px;
     height: 500px;
@@ -94,143 +63,114 @@
     box-shadow: 0px 5px 5px #0707076c;
     margin-left: 50px;
     margin-right: 50px;
-  }
-  
-  .room-image {
+}
+
+.room-image {
     width: 260px;
     height: 270px;
     border-radius: 15px;
     box-shadow: 0px 5px 5px #1a472b6c;
-  }
-  
-  .room-details {
+}
+
+.room-details {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
     text-align: left;
-  }
-  
-  .room-info {
+}
+
+.room-info {
     display: flex;
     flex-direction: column;
     align-items: left;
     margin-left: 25px;
-  }
-  
-  .room-type {
+}
+
+.room-type {
     font-size: 18px;
     font-family: 'Fira Sans';
     font-weight: 400;
     color: #244135;
     word-wrap: break-word;
-  }
-  
-  .price {
+}
+
+.price {
     display: flex;
     align-items: center;
-  }
-  
-  .starting-from {
+}
+
+.starting-from {
     font-size: 14px;
     font-family: 'Fira Sans';
     font-weight: 400;
     color: #244135;
     word-wrap: break-word;
     margin-right: 5px;
-  }
-  
-  .price-value {
+}
+
+.price-value {
     font-size: 20px;
     font-family: 'Fira Sans';
     font-weight: 500;
     color: #244135;
     word-wrap: break-word;
-  }
-  
-  .room-amenities {
+}
+
+.room-amenities {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: 25px;
     margin-left: 20px;
     margin-right: 20px;
-  }
-  
-  .area {
+}
+
+.area {
     text-align: right;
     font-weight: 430;
-  }
-  
-  .guests {
+}
+
+.guests {
     align-self: left;
     margin: -10px 0px 0px;
     background-image: url("../Styles/Images/Guests.png");
     background-repeat: no-repeat;
     background-position: center;
     padding: 15px 15px 15px;
-  }
-  
-  .separator {
-    background-image: url("../Styles/Images/DividerN.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 35px 15px 15px;
-  }
-  
-  .comingSoon {
-    background-image: url("../Styles/Images/cottage.png");
-    background-repeat: repeat-x;
-    background-position: center;
-    width: 100%;
-    height: 250px;
-    color: white;
-    text-align: left;
-    display: flex;
-    align-items: center;
-  }
-  
-  .comingSoonContent {
-    margin-left: 20px;
-  }
-  
-  .comingSoon h1 {
-    font-size: 35px;
-  }
-  
-  /* Change content when disabled */
-  input:disabled + .slider:before {
+}
+
+/* Change content when disabled */
+input:disabled + .slider:before {
     content: "$";
-  }
-  
-  /* Change content when enabled */
-  input:checked + .slider:before {
+}
+
+/* Change content when enabled */
+input:checked + .slider:before {
     content: "₾";
-  }
-  
-  
-  /* The switch - the box around the slider */
-  .price-toggle {
+}
+
+/* The switch - the box around the slider */
+.price-toggle {
     margin-left: 85px;
-  }
-  
-  
-  .switch {
+}
+
+.switch {
     position: relative;
     display: inline-block;
     width: 50px;
     height: 25px;
-  }
-  
-  /* Hide default HTML checkbox */
-  .switch input {
+}
+
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
-  
-  /* The slider */
-  .slider {
+}
+
+/* The slider */
+.slider {
     position: absolute;
     text-align: center;
     cursor: pointer;
@@ -243,15 +183,15 @@
     border-color: #a39a84;
     border-radius: 0.3px;
     transition: all .4s;
-  }
-  
-  .slider::after {
+}
+
+.slider::after {
     content: "$ ₾";
     letter-spacing: 4px;
     color: #a39a84;
-  }
-  
-  .slider:before {
+}
+
+.slider:before {
     position: absolute;
     content: "$";
     text-align: center;
@@ -266,29 +206,29 @@
     border-color: #244135;
     -webkit-transition: .4s;
     transition: .4s;
-  }
-  
-  input:checked + .slider {
+}
+
+input:checked + .slider {
     background-color: #FFF8E9;
-  }
-  
-  input:focus + .slider {
+}
+
+input:focus + .slider {
     box-shadow: 0 0 1px #FFF8E9;
-  }
-  
-  input:checked + .slider:before {
+}
+
+input:checked + .slider:before {
     -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
     transform: translateX(26px);
     -moz-transform: translateX(26px);
     -o-transform: translateX(26px);
-  }
-  
-  /* Rounded sliders */
-  .slider.round {
+}
+
+/* Rounded sliders */
+.slider.round {
     border-radius: 34px;
-  }
-  
+}
+
   .slider.round:before {
     border-radius: 50%;
-  }
+}

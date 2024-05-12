@@ -16,6 +16,7 @@ const RoomSection = () => {
   const mobileSettings = {
     dots: true,
     infinite: true,
+    arrows: false,
     slidesToShow: 1,
     swipeToSlide: true,
     speed: 500,
