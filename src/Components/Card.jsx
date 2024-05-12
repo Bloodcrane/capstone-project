@@ -1,3 +1,4 @@
+import "../Styles/RoomSection.css"
 
 const Card = ({Image = "https://via.placeholder.com/260x270", Price = "$59", Area = "20m²"}) => {
     return (

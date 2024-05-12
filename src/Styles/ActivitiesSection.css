@@ -1,0 +1,79 @@
+.activities-desktop {
+    padding: 30px 300px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .activities-desktop div {
+    width: 300px;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering:optimizeQuality;
+    opacity: 80%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 15px;
+  }
+  
+  .activities-desktop div p {
+    margin: 0;
+  }
+  
+  .activities-desktop div:hover, .activities-desktop div:active {
+    opacity: 100%;
+    color: #ffffff00;
+    font-size: 20px;
+  }
+  
+  .activities-desktop div:nth-child(2),
+  .activities-desktop div:nth-child(5) {
+    margin-top: 0px;
+  }
+  
+  
+  
+  .activities-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .activities-mobile > div {
+    width: calc(50% - 10px);
+    max-width: 250px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: optimizeQuality;
+    opacity: 80%;
+    margin: 30px 5px 50px 5px;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #070707;
+    font-size: 25px;
+    border-radius: 15px;
+  }
+  
+  .activities-mobile > div p {
+    margin: 0;
+  }
+  
+  .activities-mobile > div:hover,
+  .activities-mobile > div:active {
+    opacity: 100%;
+    color: #ffffff00;
+    font-size: 20px;
+  }

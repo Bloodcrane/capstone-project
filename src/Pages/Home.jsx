@@ -2,7 +2,7 @@ import React from "react";
 // import { useMediaQuery } from 'react-responsive'
 import HeaderNav from "../Components/HeaderNav";
 import HomeTopSection from "../Components/HomeTopSection";
-import RoomsSection from "../Components/MidSection"
+import RoomsSection from "../Components/RoomSection"
 import About from "../Components/About";
 import Activities from "../Components/Activities";
 import ExploreSection from "../Components/ExploreSection";

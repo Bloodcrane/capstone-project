@@ -1,5 +1,7 @@
 import { useMediaQuery } from 'react-responsive'
 
+import "../Styles/ActivitiesSection.css"
+
 import fishing from "../Styles/Images/Activities/fishing.png"
 import museum from "../Styles/Images/Activities/museum.png"
 import hiking from "../Styles/Images/Activities/hiking.png"

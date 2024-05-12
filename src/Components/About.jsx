@@ -2,6 +2,8 @@ import { useMediaQuery } from 'react-responsive'
 import aboutFamilyImg from "../Styles/Images/paper.png"
 import { React, useState } from 'react'
 
+import "../Styles/AboutSection.css"
+
 const About = () => {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 1224px)'

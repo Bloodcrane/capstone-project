@@ -1,0 +1,106 @@
+.aboutFamily {
+    padding: 20px 100px 20px;
+    color: #244135;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-shadow: 3px 3px 5px #07070756;
+  }
+  
+  .aboutFamily-img {
+    text-align: left;
+    height: 340px;
+    box-shadow: 5px 5px 5px #07070765;
+    border-radius: 5px;
+  
+    outline-color: #0000002f;
+    outline-width: 1px;
+    outline-style: groove;
+  }
+  
+  .aboutFamily-title {
+    text-align: left;
+  }
+  
+  .aboutFamily-history {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 30px;
+    line-height: 1.5;
+  
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+  }
+  
+  
+  .aboutFamily-mobile {
+    color: #244135;
+    text-shadow: 3px 3px 5px #07070756;
+    margin-bottom: 15px;
+  }
+  
+  .aboutFamily-title-mobile {
+    text-align: center;
+    justify-content: center;
+    display: inline-flex;
+    flex-direction: column;
+  }
+  
+  .aboutFamily-mobile > div {
+    transition: opacity 0.3s ease-in-out; /* Add transition */
+  }
+  
+  .aboutFamily-mobile > div.show {
+    opacity: 1; /* Opacity for visible section */
+  }
+  
+  
+  .aboutFamily-title-mobile img {
+    height: 340px;
+    max-width: 280px;
+  }
+  
+  .aboutFamily-popup-mobile {
+    font-family: "Italianno", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  
+  .aboutFamily-title-mobile,
+  .aboutFamily-popup-mobile {
+      opacity: 1;
+      transition: opacity 0.3s ease-in-out;
+  }
+  
+  .hidden {
+      opacity: 0;
+      pointer-events: none;
+      visibility: hidden;
+      position: absolute;
+  }
+  
+  .aboutFamily-mobile button {
+    border-style: none;
+    background-color: #691b1b00;
+    padding: 15px 15px 15px;
+    text-decoration:underline;
+    font-size: 20px;
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    color: #244135;
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  
+  .aboutFamily-mobile button:hover {
+    text-decoration:line-through;
+    font-weight: 600;
+    color: #8a9e96;
+  }

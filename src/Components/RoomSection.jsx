@@ -2,6 +2,8 @@ import React from 'react';
 import Card from './Card';
 import { useMediaQuery } from 'react-responsive';
 
+import "../Styles/RoomSection.css"
+
 const RoomSection = () => {
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
