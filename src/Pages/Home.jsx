@@ -1,5 +1,4 @@
 import React from "react";
-// import { useMediaQuery } from 'react-responsive'
 import HeaderNav from "../Components/HeaderNav";
 import HomeTopSection from "../Components/HomeTopSection";
 import RoomsSection from "../Components/RoomSection"
@@ -9,13 +8,6 @@ import ExploreSection from "../Components/ExploreSection";
 
 
 const Home = () => {
-    // const isDesktopOrLaptop = useMediaQuery({
-    //     query: '(min-width: 1224px)'
-    //   })
-    //   const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
-    //   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
-    //   const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
-    //   const isRetina = useMediaQuery({ query: '(min-resolution: 2dppx)' })
 
     return (
         <div>

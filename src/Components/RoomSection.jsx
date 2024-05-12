@@ -26,7 +26,7 @@ const RoomSection = () => {
   };
 
   return (
-    <div className="RoomsContainer">
+    <div id="rooms-section" className="RoomsContainer">
       <div className="RContentWrapper">
         <h1 className="RTitle">Rooms</h1>
         {isDesktopOrLaptop && (

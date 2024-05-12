@@ -16,7 +16,7 @@ const Activities = () => {
       const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return (
-        <div>
+        <div id="activities-section">
             {/* Desktop Structure */}
             {isDesktopOrLaptop && <>
                 <div className='activities-desktop'>

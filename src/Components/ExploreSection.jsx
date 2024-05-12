@@ -8,7 +8,7 @@ const ExploreSection = () => {
       const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
     return (
-        <div>
+        <div id="nearby-section">
             <h2>Explore Nearby</h2>
             {/* Desktop Structure */}
             {isDesktopOrLaptop && <>

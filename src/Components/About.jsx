@@ -17,7 +17,7 @@ const About = () => {
     };
 
     return (
-        <div>
+        <div id="about-section">
             {/* Desktop Structure */}
             {isDesktopOrLaptop && <>
                 <div className="aboutFamily">
