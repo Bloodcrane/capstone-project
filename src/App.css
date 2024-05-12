@@ -36,10 +36,8 @@ body{
 .cardSection {
   flex-direction: row;
   display: flex;
-  margin-top: 15px;
-  margin-left: 65px;
-  margin-right: 65px;
-  justify-content: space-between;
+  margin-top: 40px;
+  justify-content: space-evenly;
   margin-bottom: 60px;
 }
 
@@ -54,7 +52,7 @@ body{
   border-radius: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   gap: 25px;
   overflow: hidden;
@@ -147,9 +145,16 @@ body{
   background-image: url("./Styles/Images/cottage.png");
   background-repeat: repeat-x;
   background-position: center;
-  padding: 100px 100px 100px;
+  width: 100%;
+  height: 250px;
   color: white;
   text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.comingSoonContent {
+  margin-left: 20px;
 }
 
 .comingSoon h1 {
@@ -161,7 +166,7 @@ body{
   color: #244135;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-shadow: 3px 3px 5px #07070756;
 }
 
@@ -267,7 +272,7 @@ body{
   padding: 30px 300px 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .activities-desktop div {
@@ -307,40 +312,133 @@ body{
 
 
 .activities-mobile {
-  margin-inline: 10px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.activities-mobile div {
-  width: 200px;
+.activities-mobile > div {
+  width: calc(50% - 10px);
+  max-width: 250px;
   height: 150px;
   background-position: center;
   background-repeat: no-repeat;
-  image-rendering:optimizeQuality;
+  image-rendering: optimizeQuality;
   opacity: 80%;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin: 30px 5px 50px 5px;
   cursor: pointer;
   transition: all 0.5s;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
+  background-color: #070707;
   font-size: 25px;
   border-radius: 15px;
 }
 
-.activities-mobile div p {
+.activities-mobile > div p {
   margin: 0;
 }
 
-.activities-mobile div:hover, .activities-mobile div:active {
+.activities-mobile > div:hover,
+.activities-mobile > div:active {
   opacity: 100%;
   color: #ffffff00;
   font-size: 20px;
 }
 
+/* Change content when disabled */
+input:disabled + .slider:before {
+  content: "$";
+}
+
+/* Change content when enabled */
+input:checked + .slider:before {
+  content: "₾";
+}
+
+
+/* The switch - the box around the slider */
+.price-toggle {
+  margin-left: 85px;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f1e9d6;
+  border: 2px solid;
+  border-color: #a39a84;
+  border-radius: 0.3px;
+  transition: all .4s;
+}
+
+.slider::after {
+  content: "$ ₾";
+  letter-spacing: 4px;
+  color: #a39a84;
+}
+
+.slider:before {
+  position: absolute;
+  content: "$";
+  text-align: center;
+  color: #244135;
+  font-weight: 500;
+  height: 20px;
+  width: 20px;
+  left: -2px;
+  bottom: -2px;
+  background-color: #C6D4B2;
+  border: 2px solid;
+  border-color: #244135;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FFF8E9;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #FFF8E9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+  -moz-transform: translateX(26px);
+  -o-transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

@@ -9,6 +9,12 @@ const Card = ({Image = "https://via.placeholder.com/260x270", Price = "$59", Are
               <div className="price">
                 <span className="starting-from">Starting from</span>
                 <span className="price-value">{Price}</span>
+                <div className="price-toggle">
+                <label class="switch">
+                  <input type="checkbox"></input>
+                  <span class="slider round"></span>
+                </label>
+              </div>
               </div>
             </div>
             <div className="room-amenities">
