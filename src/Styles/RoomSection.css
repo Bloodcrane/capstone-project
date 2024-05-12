@@ -40,18 +40,27 @@
     margin: 50px 65px 15px;
   }
   
-  .cardSection {
+  .cardSection-desktop {
     flex-direction: row;
     display: flex;
-    margin-top: 40px;
     justify-content: space-evenly;
+    margin-top: 40px;
     margin-bottom: 60px;
   }
-  
-  .room-card {
+
+  .cardSection-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .room-card-desktop {
+    display: flex;
     width: 300px;
-    height: 370px;
-    padding: 30px 16px;
+    height: 500px;
+    margin-bottom: 20px;
     background-color: #FFF7E6;
     outline-color: #24413518;
     outline-width: 1px;
@@ -64,6 +73,27 @@
     gap: 25px;
     overflow: hidden;
     box-shadow: 0px 5px 5px #0707076c;
+  }
+
+  .room-card-mobile {
+    display: flex;
+    width: 300px;
+    height: 500px;
+    margin-bottom: 20px;
+    background-color: #FFF7E6;
+    outline-color: #24413518;
+    outline-width: 1px;
+    outline-style: groove;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 25px;
+    overflow: hidden;
+    box-shadow: 0px 5px 5px #0707076c;
+    margin-left: 50px;
+    margin-right: 50px;
   }
   
   .room-image {
