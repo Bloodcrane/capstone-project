@@ -22,6 +22,26 @@ const ExploreSection = () => {
                         <p>Ureki</p>
                         <label>82km</label>
                     </div>
+
+                    <div className='explore-card'>
+                        <h4 className='explore-card-title'>Sandy and rocky beaches</h4>
+                        <p>Batumi Beach</p>
+                        <label>103km</label>
+                        <p>Grigoleti</p>
+                        <label>86km</label>
+                        <p>Ureki</p>
+                        <label>82km</label>
+                    </div>
+
+                    <div className='explore-card'>
+                        <h4 className='explore-card-title'>Sandy and rocky beaches</h4>
+                        <p>Batumi Beach</p>
+                        <label>103km</label>
+                        <p>Grigoleti</p>
+                        <label>86km</label>
+                        <p>Ureki</p>
+                        <label>82km</label>
+                    </div>
                 </div>
             </>}
 

@@ -56,6 +56,7 @@ const HeaderNav = () => {
           <nav>
             <button className="mobileShowButton" onClick={toggleMobileNav}></button>
             <div className={showMobileNav ? 'mobile-nav show' : 'mobile-nav'}>
+            <button className="mobileHideButton" onClick={toggleMobileNav}></button>
                 <button className="mobileCloseButton" onClick={toggleMobileNav}></button>
                 <div className='navButton-mobile' onClick={() => {scrollToSection('rooms-section'); toggleMobileNav()}}>
                     <img src={rooms_icon} alt="" />
