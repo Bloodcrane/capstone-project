@@ -25,7 +25,7 @@ const GallerySection = () => {
     centerMode: true,
     adaptiveHeight: true,
     autoplay: true,
-    autoplaySpeed: 2000
+    autoplaySpeed: 3000
   };
 
   return (

@@ -6,6 +6,7 @@ import About from "../Components/About";
 import Activities from "../Components/Activities";
 import ExploreSection from "../Components/ExploreSection";
 import GallerySection from "../Components/GallerySection";
+import ContactSection from "../Components/ContactSection";
 
 
 const Home = () => {
@@ -29,6 +30,8 @@ const Home = () => {
             <ExploreSection/>
             <div className="separator"></div>
             <GallerySection/>
+            <div className="separator"></div>
+            <ContactSection/>
             <div className="separator"></div>
         </div>
     )
