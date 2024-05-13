@@ -5,6 +5,7 @@ import RoomsSection from "../Components/RoomSection"
 import About from "../Components/About";
 import Activities from "../Components/Activities";
 import ExploreSection from "../Components/ExploreSection";
+import GallerySection from "../Components/GallerySection";
 
 
 const Home = () => {
@@ -26,6 +27,8 @@ const Home = () => {
             <Activities/>
             <div className="separator"></div>
             <ExploreSection/>
+            <div className="separator"></div>
+            <GallerySection/>
             <div className="separator"></div>
         </div>
     )
