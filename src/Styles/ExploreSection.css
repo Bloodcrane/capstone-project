@@ -49,6 +49,8 @@
     align-items: center;
     flex-direction: column;
     height: 500px;
+    padding-bottom: 80px;
+    padding-top: 35px;
 }
 
 .wrap-collabsible {

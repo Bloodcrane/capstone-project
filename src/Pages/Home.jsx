@@ -26,6 +26,7 @@ const Home = () => {
             <Activities/>
             <div className="separator"></div>
             <ExploreSection/>
+            <div className="separator"></div>
         </div>
     )
 }
