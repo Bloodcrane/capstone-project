@@ -7,6 +7,7 @@ import Activities from "../Components/Activities";
 import ExploreSection from "../Components/ExploreSection";
 import GallerySection from "../Components/GallerySection";
 import ContactSection from "../Components/ContactSection";
+import SiteFooter from "../Components/SiteFooter";
 
 
 const Home = () => {
@@ -33,6 +34,7 @@ const Home = () => {
             <div className="separator"></div>
             <ContactSection/>
             <div className="separator"></div>
+            <SiteFooter/>
         </div>
     )
 }
