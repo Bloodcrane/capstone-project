@@ -55,7 +55,7 @@ const ContactSection = () => {
                         </form>
                     </div>
                     <div className='map-container-mobile'>
-                        <MapEmbed width={440}/>
+                        <MapEmbed width={400}/>
                     </div>
                 </section>
             </>}

@@ -12,7 +12,7 @@
 
 .contact-form-mobile {
     margin-top: 25px;
-    width: 400px;
+    width: 80%;
     padding: 20px;
     border-radius: 10px;
     background-color: #BAD693;
@@ -72,7 +72,9 @@ background-color: #FFF7E6;
 }
 
 button[type="submit"] {
-    padding: 20px 55px;
+    padding: 20px auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #75904F;
     color: #fff;
     border: none;
@@ -108,7 +110,26 @@ button[type="submit"]:hover {
     margin-left: 0;
 }
 
-.map-iframe {
+.map-iframe-desktop {
     border-radius: 15px;
     border-style: none;
 }
+
+.map-iframe-mobile {
+    border-radius: 15px;
+    border-style: none;
+    width: 100%;
+    max-width: 700px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .map-iframe-mobile {
+      width: 350px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) {
+    .map-iframe-mobile {
+      width: 700px;
+    }
+  }

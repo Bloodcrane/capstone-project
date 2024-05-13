@@ -5,10 +5,11 @@ const MapEmbed = ({width = 550}) => {
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
   const deviceType = isDesktopOrLaptop ? 'google-map-desktop' : 'google-map-mobile';
+  const mapDeviceType = isDesktopOrLaptop ? 'map-iframe-desktop' : 'map-iframe-mobile';
 
   return (
     <div className={`google-map ${deviceType}`}>
-      <iframe className='map-iframe'
+      <iframe className={`map-iframe ${mapDeviceType}`}
         title="Google Map"
         width={width}
         height="500"
