@@ -9,12 +9,19 @@ return (
 );
 }
 
+const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
+};
+
 function Heading() {
 return <h1 className="slogan">Your perfect escape</h1>;
 }
 
-function NavItem({ children }) {
-return <div className="nav-item">{children}</div>;
+function NavItem({ children, section }) {
+return <div className="nav-item" onClick={() => scrollToSection(section)}>{children}</div>;
 }
 
 function SocialIcon({ src, alt }) {
@@ -41,16 +48,16 @@ const SiteFooter = () => {
           <div className="right-section">
             <nav className="navigation">
               <div className="nav-group">
-                <NavItem>Guesthouse</NavItem>
-                <NavItem>Our family</NavItem>
+              <div className="category-text">Guesthouse</div>
+                <NavItem section={'about-section'}>Our family</NavItem>
               </div>
               <div className="nav-group">
-                <NavItem>Highlights</NavItem>
-                <NavItem>Activities</NavItem>
-                <NavItem>Nearby</NavItem>
+              <div className="category-text">Highlights</div>
+                <NavItem section={'activities-section'}>Activities</NavItem>
+                <NavItem section={'nearby-section'}>Nearby</NavItem>
               </div>
               <div className="nav-group">
-                <div className="connect-text">Connect</div>
+                <div className="category-text">Connect</div>
                 <div className="social-icons">
                   <SocialIcon
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/ca986cbfea5675824de2d1b8f24e5b2c3c53b1643b361cab0c8fe94e787d4a72?apiKey=8fb93ef11d1d48708e95df373a13e52c&"

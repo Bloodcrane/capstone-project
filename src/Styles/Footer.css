@@ -1,57 +1,76 @@
-    .container {
-        background-color: var(--Card-background, #bad693);
-        display: flex;
-        flex-direction: column;
-        padding: 48px 60px;
-    }
-
-  .title {
-    color: #064e3b;
-    align-self: center;
-    font: 400 18px/160% Fira Sans, -apple-system, Roboto, Helvetica, sans-serif;
-  }
-
-  .slogan {
-    color: #064e3b;
-    font-size: 30px;
-  }
-
-  .navigation {
+.container {
+    background-color: var(--Card-background, #bad693);
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 12px;
-    gap: 20px;
-    font-size: 12px;
-    color: var(--Primary-400, #455232);
-    font-weight: 400;
-    line-height: 160%;
-  }
+    flex-direction: column;
+    padding: 48px 60px;
+    user-select: none;
+}
 
-  .nav-link {
-    font-family: Fira Sans, sans-serif;
-  }
+.title {
+color: #064e3b;
+align-self: center;
+font: 400 18px/160% Fira Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
 
-  .footer {
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
-    width: 100%;
-    gap: 20px;
-  }
+.slogan {
+color: #064e3b;
+font-size: 30px;
+}
 
-  .copyright {
-    color: #059669;
-    font: 400 12px/160% Fira Sans, -apple-system, Roboto, Helvetica, sans-serif;
-  }
+.category-text {
+color: #064e3b;
+font-size: 13px;
+margin-bottom: 5px;
+}
 
-  .social-icons {
-    display: flex;
-    gap: 8px;
-  }
+.navigation {
+display: flex;
+justify-content: space-evenly;
+margin-top: 12px;
+gap: 20px;
+font-size: 12px;
+color: var(--Primary-400, #455232);
+font-weight: 400;
+line-height: 160%;
+}
 
-  .social-icon {
-    width: 24px;
-    aspect-ratio: 1;
-    object-fit: auto;
-    object-position: center;
-  }
+.nav-link {
+font-family: Fira Sans, sans-serif;
+}
+
+.nav-item {
+cursor: pointer;
+user-select: none;
+transition: all 0.3s;
+}
+
+.nav-item:hover {
+color: #059630;
+font-size: 13px;
+font-weight: 700;
+}
+
+.footer {
+display: flex;
+justify-content: center;
+margin-top: 12px;
+width: 100%;
+gap: 20px;
+}
+
+.copyright {
+color: #059669;
+font: 400 12px/160% Fira Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+.social-icons {
+display: flex;
+gap: 8px;
+}
+
+.social-icon {
+width: 24px;
+aspect-ratio: 1;
+object-fit: auto;
+object-position: center;
+}
