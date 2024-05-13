@@ -27,6 +27,11 @@ header{
     top: 0;
     transition: all 0.3s;
     color: #ffffff00;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
   }
 
   .show {
@@ -226,9 +231,6 @@ header{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-  }
-
-  .navButton-mobile span:hover {
     cursor: pointer;
     -webkit-user-select: none; /* Safari */
     -moz-user-select: none; /* Firefox */

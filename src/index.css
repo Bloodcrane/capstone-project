@@ -16,3 +16,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  /* -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; */
+}
+
+::-moz-selection {
+  background: rgba(61, 88, 68, 0.493);
+}
+
+::selection {
+  background: rgba(61, 88, 68, 0.493);
+}
