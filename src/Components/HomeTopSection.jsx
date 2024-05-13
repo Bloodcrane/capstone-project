@@ -7,6 +7,13 @@ const HomeTopSection = () => {
       })
       const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
 
+      const scrollToSection = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
+
     return (
         <div>
             {/* Desktop Structure */}
@@ -15,7 +22,7 @@ const HomeTopSection = () => {
                     <div className="homeTop-pc">
                         <h1 className="home-title-pc">Guesthouse Nostalgia</h1>
                         <h3 className="home-dsc-pc">Your tranquil escape begins here.</h3>
-                        <button className="home-btn-pc">Discover More</button>
+                        <button className="home-btn-pc" onClick={() => {scrollToSection('gallery-section')}}>Discover More</button>
                     </div>
                 </section>
             </>}
@@ -25,7 +32,7 @@ const HomeTopSection = () => {
                     <div className="homeTop-mobile">
                         <h1 className="home-title-mobile">Guesthouse Nostalgia</h1>
                         <h3 className="home-dsc-mobile">Your tranquil escape begins here.</h3>
-                        <button className="home-btn-mobile">Discover More</button>
+                        <button className="home-btn-mobile" onClick={() => {scrollToSection('gallery-section')}}>Discover More</button>
                     </div>
                 </section>
             </>}
