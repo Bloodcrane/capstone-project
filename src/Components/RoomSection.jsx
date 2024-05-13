@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card';
+import Card from './Details/Card';
 import { useMediaQuery } from 'react-responsive';
 import Slider from 'react-slick'; // Import Slider from react-slick
 import "slick-carousel/slick/slick.css";

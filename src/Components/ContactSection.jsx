@@ -1,6 +1,6 @@
 import '../Styles/ContactSection.css'
 import { useMediaQuery } from 'react-responsive'
-import MapEmbed from './MapEmbed'
+import MapEmbed from './Details/MapEmbed'
 
 const ContactSection = () => {
     const isDesktopOrLaptop = useMediaQuery({

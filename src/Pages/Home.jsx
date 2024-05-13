@@ -1,9 +1,9 @@
 import React from "react";
 import HeaderNav from "../Components/HeaderNav";
-import HomeTopSection from "../Components/HomeTopSection";
+import DiscoverSection from "../Components/DiscoverSection";
 import RoomsSection from "../Components/RoomSection"
-import About from "../Components/About";
-import Activities from "../Components/Activities";
+import AboutSection from "../Components/AboutSection";
+import ActivitiesSection from "../Components/ActivitiesSection";
 import ExploreSection from "../Components/ExploreSection";
 import GallerySection from "../Components/GallerySection";
 import ContactSection from "../Components/ContactSection";
@@ -14,7 +14,7 @@ const Home = () => {
 
     return (
         <div>
-            <HomeTopSection/>
+            <DiscoverSection/>
             <HeaderNav/>
             <RoomsSection/>
             <div className="separator"></div>
@@ -24,9 +24,9 @@ const Home = () => {
                     <h1>Coming Soon!</h1>
                 </div>
             </div>
-            <About/>
+            <AboutSection/>
             <div className="separator"></div>
-            <Activities/>
+            <ActivitiesSection/>
             <div className="separator"></div>
             <ExploreSection/>
             <div className="separator"></div>

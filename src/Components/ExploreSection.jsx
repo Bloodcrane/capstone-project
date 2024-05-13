@@ -6,7 +6,7 @@ import beach from "../Styles/Images/Nearby/sea.png"
 import mountains from "../Styles/Images/Nearby/mountains.png"
 import sightseeing from "../Styles/Images/Nearby/sightseeing.png"
 import cuisine from "../Styles/Images/Nearby/cuisine.png"
-import CollapsableCard from './CollapsableCard'
+import CollapsableCard from './Details/CollapsableCard'
 
 const ExploreSection = () => {
     const isDesktopOrLaptop = useMediaQuery({

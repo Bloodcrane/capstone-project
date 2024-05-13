@@ -1,6 +1,10 @@
+import React from 'react';
+const Login = () => {
+    return (
+      <div>
+        <button>Login</button>
+      </div>
+    );
+  };
 
-const LoginPage = () => {
-
-};
-
-export default LoginPage;
+export default Login;

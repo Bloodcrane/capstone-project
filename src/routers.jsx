@@ -9,6 +9,10 @@ const routers = [
         exact: true
     },
     {
+        element: <HomePage/>,
+        path: '/home',
+    },
+    {
         element: <AdminPage/>,
         path: '/admin'
     },

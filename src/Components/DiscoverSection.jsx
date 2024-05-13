@@ -1,7 +1,7 @@
 import '../Styles/HomeTopSection.css'
 import { useMediaQuery } from 'react-responsive'
 
-const HomeTopSection = () => {
+const DiscoverSection = () => {
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 1224px)'
       })
@@ -40,4 +40,4 @@ const HomeTopSection = () => {
     )
 }
 
-export default HomeTopSection
+export default DiscoverSection
