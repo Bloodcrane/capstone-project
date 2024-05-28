@@ -25,6 +25,10 @@
     margin-bottom: 60px;
 }
 
+.switch {
+    margin-right: 16px;
+}
+
 .room-card-desktop {
     display: flex;
     width: 300px;

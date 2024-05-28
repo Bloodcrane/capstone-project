@@ -14,8 +14,12 @@
       "contact": "კონტაქტი"
     },
     "homeTop": {
-      "title": "გესთჰაუსი  ნოსტალგია",
-      "description": "თქვენი მშვიდი დასვენება იწყება აქ.",
+      "title": "Guesthouse Nostalgia",
+      "description": "Your tranquil escape begins here.",
       "discover": "გაიგეთ მეტი"
+    },
+    "comingSoonContent": {
+      "h2": "აღმოაჩინეთ ჩვენი კოტეჯების გახსნა 2024 წლის ივნისში",
+      "h1": "Მალე!"
     }
   }

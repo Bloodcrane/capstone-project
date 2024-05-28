@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 
 const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Area = "20m²" }) => {
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
+
+  const conversionRate = 2.8;
+
+  const priceInUSD = parseFloat(Price.replace('$', ''));
+
+  const [showInGEL, setShowInGEL] = useState(false);
+
+  const handleCheckboxChange = () => {
+    setShowInGEL(!showInGEL);
+  };
+
+  const displayedPrice = showInGEL ? `₾${(priceInUSD * conversionRate).toFixed(2)}` : `$${priceInUSD.toFixed(2)}`;
 
   const cardClassName = isDesktopOrLaptop ? 'room-card-desktop' : 'room-card-mobile';
 
@@ -14,10 +26,10 @@ const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Ar
           <div className="room-type">Double Room</div>
           <div className="price">
             <span className="starting-from">Starting from</span>
-            <span className="price-value">{Price}</span>
+            <span className="price-value">{displayedPrice}</span>
             <div className="price-toggle">
               <label className="switch">
-                <input type="checkbox" />
+                <input type="checkbox" checked={showInGEL} onChange={handleCheckboxChange} />
                 <span className="slider round"></span>
               </label>
             </div>
