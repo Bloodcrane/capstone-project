@@ -48,10 +48,10 @@ const HeaderNav = () => {
               <option value="en">ENG</option>
               <option value="ge">GEO</option>
             </select>
-            <select id="currency-dropdown">
+            {/* <select id="currency-dropdown">
               <option value="usd">USD</option>
               <option value="gel">GEL</option>
-            </select>
+            </select> */}
           </div>
         </header>
       )}
