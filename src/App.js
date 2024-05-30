@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from "./Pages/Login.jsx";
 import './App.css';
 // import SecureRoutes from './utils/SecureRoutes.jsx';
