@@ -1,8 +1,8 @@
 import React, { Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from "./Pages/Login.jsx";
 import './App.css';
-import SecureRoutes from './utils/SecureRoutes.jsx';
+// import SecureRoutes from './utils/SecureRoutes.jsx';
 import { I18nextProvider } from 'react-i18next';
 import i18n from './i18n';
 
@@ -17,9 +17,7 @@ const App = () => (
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/home" element={<HomePage />} />
           <Route path="/login" element={<Login />} />
-          <Route element={<SecureRoutes />}>
-            <Route path="/admin" element={<AdminPage />} />
-          </Route>
+          <Route path="/admin" element={<AdminPage />} />
         </Routes>
       </Suspense>
     </Router>
