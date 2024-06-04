@@ -72,9 +72,7 @@ background-color: #FFF7E6;
 }
 
 button[type="submit"] {
-    padding: 20px auto;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 20px 40px 20px;
     background-color: #75904F;
     color: #fff;
     border: none;

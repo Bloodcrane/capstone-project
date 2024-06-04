@@ -1,18 +1,22 @@
-import { useMediaQuery } from 'react-responsive'
-import { React } from 'react'
-import "../Styles/ExploreSection.css"
+import { useMediaQuery } from 'react-responsive';
+import React, { useState } from 'react';
+import "../Styles/ExploreSection.css";
 
-import beach from "../Styles/Images/Nearby/sea.png"
-import mountains from "../Styles/Images/Nearby/mountains.png"
-import sightseeing from "../Styles/Images/Nearby/sightseeing.png"
-import cuisine from "../Styles/Images/Nearby/cuisine.png"
-import CollapsableCard from './Details/CollapsableCard'
+import beach from "../Styles/Images/Nearby/sea.png";
+import mountains from "../Styles/Images/Nearby/mountains.png";
+import sightseeing from "../Styles/Images/Nearby/sightseeing.png";
+import cuisine from "../Styles/Images/Nearby/cuisine.png";
+import CollapsableCard from './Details/CollapsableCard';
 
 const ExploreSection = () => {
-    const isDesktopOrLaptop = useMediaQuery({
-        query: '(min-width: 1224px)'
-      })
-      const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+    const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
+    const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
+
+    const [openCardId, setOpenCardId] = useState(null);
+
+    const handleToggle = (id) => {
+        setOpenCardId(prevOpenCardId => prevOpenCardId === id ? null : id);
+    };
 
     return (
         <div id="nearby-section">
@@ -64,15 +68,15 @@ const ExploreSection = () => {
 
             {/* Mobile Structure */}
             {isTabletOrMobile && <>
-                <div  className='explore-section-mobile'>
-                    <CollapsableCard id={1} title='Sandy and rocky beaches' image={beach} textUpper='Batumi Beach 103km' textMiddle='Grigoleti 86km' textLower='Ureki 82km'/>
-                    <CollapsableCard id={2} title='Georgian Mountains' image={mountains} textUpper='Nabeghlavi 12km' textMiddle='Bakhmaro 20km' textLower='Gomismta 77km'/>
-                    <CollapsableCard id={3} title='Sightseeing' image={sightseeing} textUpper='Miniature park 79km' textMiddle='Musicians park 76km' textLower='Batumi City 12km'/>
-                    <CollapsableCard id={4} title='Cuisine' image={cuisine} textUpper='Gurian Pie' textMiddle='Brinjula - Gurian crepe' textLower='Beans with Pkhali'/>
+                <div className='explore-section-mobile'>
+                    <CollapsableCard id={1} isOpen={openCardId === 1} handleToggle={handleToggle} title='Sandy and rocky beaches' image={beach} textUpper='Batumi Beach 103km' textMiddle='Grigoleti 86km' textLower='Ureki 82km'/>
+                    <CollapsableCard id={2} isOpen={openCardId === 2} handleToggle={handleToggle} title='Georgian Mountains' image={mountains} textUpper='Nabeghlavi 12km' textMiddle='Bakhmaro 20km' textLower='Gomismta 77km'/>
+                    <CollapsableCard id={3} isOpen={openCardId === 3} handleToggle={handleToggle} title='Sightseeing' image={sightseeing} textUpper='Miniature park 79km' textMiddle='Musicians park 76km' textLower='Batumi City 12km'/>
+                    <CollapsableCard id={4} isOpen={openCardId === 4} handleToggle={handleToggle} title='Cuisine' image={cuisine} textUpper='Gurian Pie' textMiddle='Brinjula - Gurian crepe' textLower='Beans with Pkhali'/>
                 </div>
             </>}
         </div>
-    )
+    );
 }
 
-export default ExploreSection
+export default ExploreSection;

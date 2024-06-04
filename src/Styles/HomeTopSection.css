@@ -28,7 +28,7 @@
     font-weight: 400;
     background-color: #75904F;
     color: #ffffff;
-    box-shadow: 0px 5px 5px #0707076c;
+    box-shadow: 0px 3px 2px #0707076c;
     transition: all 0.3s;
     cursor: pointer;
     -webkit-transition: all 0.3s;
@@ -93,7 +93,7 @@
     font-weight: 400;
     background-color: #75904F;
     color: #ffffff;
-    box-shadow: 0px 5px 5px #0707076c;
+    box-shadow: 0px 3px 2px #0707076c;
     transition: all 0.3s;
     cursor: pointer;
     -webkit-transition: all 0.3s;

@@ -4,13 +4,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    text-shadow: 3px 3px 5px #07070756;
   }
   
   .aboutFamily-img {
     text-align: left;
     height: 340px;
-    box-shadow: 5px 5px 5px #07070765;
     border-radius: 5px;
   
     outline-color: #0000002f;
@@ -37,7 +35,6 @@
   
   .aboutFamily-mobile {
     color: #244135;
-    text-shadow: 3px 3px 5px #07070756;
     margin-bottom: 15px;
   }
   
