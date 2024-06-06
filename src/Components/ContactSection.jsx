@@ -24,10 +24,11 @@ const ContactSection = () => {
   return (
     <div>
       {/* Desktop Structure */}
+      <h1 className="CTitle">Contact Us</h1>
       {isDesktopOrLaptop && (
         <section id='contact-section' className="contactSection-desktop">
           <div className='map-container-desktop'>
-            <MapEmbed />
+            <MapEmbed width={660}/>
           </div>
           <div className="contact-form">
             <h2>Contact Us</h2>

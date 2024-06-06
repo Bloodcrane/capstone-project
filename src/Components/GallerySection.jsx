@@ -17,7 +17,7 @@ const GallerySection = () => {
   const settings = {
     dots: false,
     infinite: true,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     swipeToSlide: true,
     speed: 500,

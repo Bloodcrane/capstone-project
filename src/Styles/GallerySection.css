@@ -6,9 +6,12 @@
 }
 
 .GTitle {
+    font-size: 26px;
+    font-weight: 500;
     text-align: left;
     color: #244135;
-    margin: 50px 65px 15px;
+    margin: 50px 74px 15px;
+    margin-bottom: 50px;
 }
 
 .gallery-card-desktop {
@@ -21,7 +24,7 @@
     outline-color: #24413518;
     outline-width: 1px;
     outline-style: groove;
-    border-radius: 16px;
+    border-radius: 15px;
     margin-left: 50px;
     margin-right: 50px;
 }
@@ -39,4 +42,71 @@
     border-radius: 16px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.gallerySection-desktop {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.cardSection-mobile {
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+/* Dark mode styles for Slick slider arrows */
+.slick-prev,
+.slick-next {
+    width: 40px;
+    height: 40px;
+    color: #71894E;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #71894E;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.4s;
+}
+
+.slick-next:active,
+.slick-prev:active {
+    width: 40px;
+    height: 40px;
+    color: #71894E;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #71894E;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.slick-next:hover,
+.slick-prev:hover {
+    width: 40px;
+    height: 40px;
+    color: #71894E;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #71894E;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.slick-next::after,
+.slick-prev::after {
+    width: 40px;
+    height: 40px;
+    color: #71894E;
+    margin-left: -20px;
+    margin-right: -20px;
+    background-color: #71894E;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.slick-prev:focus,
+.slick-next:focus {
+    outline: none;
+    background-color: #71894E;
 }

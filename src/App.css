@@ -29,6 +29,7 @@ body{
 }
 
 .comingSoon {
+  margin-top: 20px;
   background-image: url("./Styles/Images/cottage.png");
   background-repeat: repeat-x;
   background-position: center;
@@ -41,7 +42,7 @@ body{
 }
 
 .comingSoonContent {
-  margin-left: 20px;
+  margin-left: 78px;
 }
 
 .comingSoon h1 {

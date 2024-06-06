@@ -1,6 +1,7 @@
 .contactSection-desktop {
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 15px;
 }
 
 .contactSection-mobile {
@@ -18,9 +19,17 @@
     background-color: #BAD693;
 }
 
+.CTitle {
+    font-size: 26px;
+    font-weight: 500;
+    text-align: left;
+    color: #244135;
+    margin: 35px 74px 35px;
+}
+
 
 .contact-form {
-    width: 500px;
+    width: 650px;
     padding: 20px;
     border-radius: 10px;
     background-color: #BAD693;
@@ -94,7 +103,7 @@ button[type="submit"]:hover {
 
 .map-container-desktop {
     position: absolute;
-    left: 0;
+    left: 25px;
 }
 
 .google-map-desktop {

@@ -17,26 +17,27 @@ const Activities = () => {
 
     return (
         <div id="activities-section">
+            <h2>Activities from Nostalgia</h2>
             {/* Desktop Structure */}
             {isDesktopOrLaptop && <>
                 <div className='activities-desktop'>
+                    <div style={{backgroundImage: `url(${riding})`}}>
+                        <p>Horseback Riding</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${hiking})`}}>
+                        <p>Hiking</p>
+                    </div>
+                    <div style={{backgroundImage: `url(${cooking})`}}>
+                        <p>Cooking Masterclass</p>
+                    </div>
                     <div style={{backgroundImage: `url(${fishing})`}}>
                         <p>Fishing</p>
                     </div>
                     <div style={{backgroundImage: `url(${museum})`}}>
                         <p>Museum</p>
                     </div>
-                    <div style={{backgroundImage: `url(${hiking})`}}>
-                        <p>Hiking</p>
-                    </div>
                     <div style={{backgroundImage: `url(${harvesting})`}}>
                         <p>Harvesting</p>
-                    </div>
-                    <div style={{backgroundImage: `url(${cooking})`}}>
-                        <p>Cooking Masterclass</p>
-                    </div>
-                    <div style={{backgroundImage: `url(${riding})`}}>
-                        <p>Horseback Riding</p>
                     </div>
                 </div>
             </>}

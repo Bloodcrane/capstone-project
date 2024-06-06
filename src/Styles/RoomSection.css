@@ -4,9 +4,11 @@
 }
 
 .RTitle {
+    font-size: 26px;
+    font-weight: 500;
     text-align: left;
     color: #244135;
-    margin: 50px 65px 15px;
+    margin: 50px 74px 15px;
 }
 
 .cardSection-desktop {

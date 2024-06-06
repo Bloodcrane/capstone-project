@@ -44,7 +44,7 @@ const About = () => {
             {isDesktopOrLaptop && (
                 <div className="aboutFamily">
                     <div className="aboutFamily-title">
-                        <h3>{t('about.title')}</h3>
+                        <h4>{t('about.title')}</h4>
                         <img className="aboutFamily-img" src={aboutFamilyImg} alt="" />
                     </div>
                     <div className={`aboutFamily-history ${isGeorgian ? 'ge' : ''}`}>

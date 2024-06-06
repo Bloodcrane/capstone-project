@@ -14,9 +14,9 @@ const RoomSection = () => {
 
   // Settings for the mobile slider
   const mobileSettings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    arrows: false,
+    arrows: true,
     slidesToShow: 1,
     swipeToSlide: true,
     speed: 500,
