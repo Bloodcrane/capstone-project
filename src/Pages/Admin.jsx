@@ -18,7 +18,7 @@ const Admin = ({ updateRoomPrice }) => {
         if (error.response && error.response.status === 401) {
           setError('You are not authorized');
         } else {
-          setError('An error occurred while fetching data');
+          setError('Data cannot be fetched.');
         }
       }
     };
@@ -37,7 +37,6 @@ const Admin = ({ updateRoomPrice }) => {
       )}
       {error && <p style={{ color: 'red' }}>{error}</p>}
       <button onClick={logout}>Logout</button>
-      {/* Add similar buttons to update other room prices */}
     </div>
   );
 };
