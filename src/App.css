@@ -3,6 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Italianno&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100..900&display=swap');
 
+@font-face {
+  font-family: alk_life;
+  src: url("./Styles/Fonts/alk_life.otf");
+  unicode-range: U+10A0-10FF;
+}
+
 body{
   text-align: center;
   background-color: #FFF7E6;

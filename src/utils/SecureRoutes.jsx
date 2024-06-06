@@ -1,10 +1,11 @@
-import { Outlet, Navigate } from 'react-router-dom'
+import React, { useContext } from 'react';
+import { Navigate } from 'react-router-dom';
+import { AuthContext } from '../Context/AuthContext';
 
-const SecureRoutes = () => {
-    let auth = {'token':false}
-    return(
-        auth.token ? <Outlet/> : <Navigate to="/login"/>
-    )
-}
+const SecureRoutes = ({ children }) => {
+  const { auth } = useContext(AuthContext);
 
-export default SecureRoutes
+  return auth ? children : <Navigate to="/login" />;
+};
+
+export default SecureRoutes;
