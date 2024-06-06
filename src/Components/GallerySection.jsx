@@ -1,13 +1,15 @@
 import { React } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import Slider from 'react-slick'; // Import Slider from react-slick
+import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/GallerySection.css";
 import ImageCard from './Details/ImageCard';
+import { useTranslation } from 'react-i18next';
 
 
 const GallerySection = () => {
+  const { t } = useTranslation();
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   });
@@ -31,7 +33,7 @@ const GallerySection = () => {
   return (
     <div id="gallery-section" className="galleryContainer">
       <div className="GContentWrapper">
-        <h1 className="GTitle">Gallery</h1>
+        <h1 className="GTitle">{t('gallery.title')}</h1>
         {isDesktopOrLaptop && (
           // Desktop Structure
           <section className='gallerySection-desktop'>

@@ -21,5 +21,64 @@
   "comingSoonContent": {
     "h2": "Discover Our Sustainable Cottages Opening June 2024",
     "h1": "Coming Soon!"
+  },
+  "rooms": {
+    "title": "Rooms",
+    "doubleroom": "Double Room",
+    "starting": "Starting From"
+  },
+  "comingsoon": {
+    "title": "Discover Our Sustainable Cottages Opening June 2024",
+    "description": "Coming Soon!"
+  },
+  "activities": {
+    "title": "Activities from Nostalgia",
+    "riding": "Horseback Riding",
+    "fishing": "Fishing",
+    "hiking": "Hiking",
+    "cooking": "Cooking Masterclass",
+    "harvesting": "Harvesting",
+    "museum": "Museum"
+  },
+  "explore": {
+    "1": "Sandy and rocky beaches",
+    "2": "Georgian Mountains",
+    "3": "Sightseeing",
+    "4": "Cuisine",
+    "title": "Explore Nearby",
+    "batumiBeach": "Batumi Beach",
+    "grigoleti": "Grigoleti",
+    "ureki": "Ureki",
+    "nabeglavi": "Nabeghlavi",
+    "bakmaro": "Bakhmaro",
+    "gomismta": "Gomismta",
+    "minipark": "Miniature park",
+    "musiciansPark": "Musicians park",
+    "batumiCity": "Batumi City",
+    "gurianPie": "Gurian Pie",
+    "brinjula1": "Brinjula",
+    "beans1": "Beans with",
+    "brinjula2": "Gurian crepe",
+    "beans2": "Pkhali"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "qa": "Questions? Let's talk.",
+    "submit": "Send Your Message!",
+    "email": "Your Number Here**",
+    "message": "Your Message Here*",
+    "phone": "Your Number Here*"
+  },
+  "footer": {
+    "title": "Nostalgia",
+    "g": "Guesthouse",
+    "about": "Our family",
+    "h": "Highlights",
+    "activities": "Activities",
+    "nearby": "Nearby",
+    "connect": "connect"
   }
 }

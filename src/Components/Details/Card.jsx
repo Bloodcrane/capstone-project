@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 
 const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Area = "20m²" }) => {
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
+
+  const { t } = useTranslation();
 
   const conversionRate = 2.8;
 
@@ -23,9 +26,9 @@ const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Ar
       <img className="room-image" src={Image} alt="RoomImage" />
       <div className="room-details">
         <div className="room-info">
-          <div className="room-type">Double Room</div>
+          <div className="room-type">{t('rooms.doubleroom')}</div>
           <div className="price">
-            <span className="starting-from">Starting from</span>
+            <span className="starting-from">{t('rooms.starting')}</span>
             <span className="price-value">{displayedPrice}</span>
             <div className="price-toggle">
               <label className="switch">

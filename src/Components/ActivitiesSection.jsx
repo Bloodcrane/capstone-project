@@ -9,7 +9,11 @@ import harvesting from "../Styles/Images/Activities/harvesting.png"
 import cooking from "../Styles/Images/Activities/cookingmasterclass.png"
 import riding from "../Styles/Images/Activities/horsebackriding.png"
 
+import { useTranslation } from 'react-i18next';
+
 const Activities = () => {
+    const { t } = useTranslation();
+
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 1224px)'
       })
@@ -17,27 +21,27 @@ const Activities = () => {
 
     return (
         <div id="activities-section">
-            <h2>Activities from Nostalgia</h2>
+            <h2>{t('activities.title')}</h2>
             {/* Desktop Structure */}
             {isDesktopOrLaptop && <>
                 <div className='activities-desktop'>
                     <div style={{backgroundImage: `url(${riding})`}}>
-                        <p>Horseback Riding</p>
+                        <p>{t('activities.riding')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${hiking})`}}>
-                        <p>Hiking</p>
+                        <p>{t('activities.hiking')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${cooking})`}}>
-                        <p>Cooking Masterclass</p>
+                        <p>{t('activities.cooking')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${fishing})`}}>
-                        <p>Fishing</p>
+                        <p>{t('activities.fishing')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${museum})`}}>
-                        <p>Museum</p>
+                        <p>{t('activities.museum')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${harvesting})`}}>
-                        <p>Harvesting</p>
+                        <p>{t('activities.harvesting')}</p>
                     </div>
                 </div>
             </>}
@@ -46,22 +50,22 @@ const Activities = () => {
             {isTabletOrMobile && <>
                 <div className='activities-mobile'>
                     <div style={{backgroundImage: `url(${fishing})`}}>
-                        <p>Fishing</p>
+                        <p>{t('activities.fishing')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${museum})`}}>
-                        <p>Museum</p>
+                        <p>{t('activities.museum')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${hiking})`}}>
-                        <p>Hiking</p>
+                        <p>{t('activities.hiking')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${harvesting})`}}>
-                        <p>Harvesting</p>
+                        <p>{t('activities.harvesting')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${cooking})`}}>
-                        <p>Cooking Masterclass</p>
+                        <p>{t('activities.cooking')}</p>
                     </div>
                     <div style={{backgroundImage: `url(${riding})`}}>
-                        <p>Horseback Riding</p>
+                        <p>{t('activities.riding')}</p>
                     </div>
                 </div>
             </>}

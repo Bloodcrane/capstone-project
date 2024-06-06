@@ -2,6 +2,8 @@ import { useMediaQuery } from 'react-responsive';
 import React, { useState } from 'react';
 import "../Styles/ExploreSection.css";
 
+import { useTranslation } from 'react-i18next';
+
 import beach from "../Styles/Images/Nearby/sea.png";
 import mountains from "../Styles/Images/Nearby/mountains.png";
 import sightseeing from "../Styles/Images/Nearby/sightseeing.png";
@@ -14,6 +16,7 @@ import phMountains from "../Styles/Images/Nearby/phMountains.png"
 import phBatumi from "../Styles/Images/Nearby/phBatumi.png"
 
 const ExploreSection = () => {
+    const { t } = useTranslation();
     const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
@@ -40,7 +43,7 @@ const ExploreSection = () => {
 
     return (
         <div id="nearby-section">
-            <h2>Explore Nearby</h2>
+            <h2>{t('explore.title')}</h2>
             {/* Desktop Structure */}
             {isDesktopOrLaptop && <>
                 <div className='explore-section-desktop'>
@@ -50,12 +53,12 @@ const ExploreSection = () => {
                         onClick={() => handleClick(1)}
                     >
                         <div className='popup-Image'><img src={phBeach} alt="" /></div>
-                        <h4 className='explore-card-title'>Sandy and rocky beaches</h4>
+                        <h4 className='explore-card-title'>{t('explore.1')}</h4>
                         <img className='icon' src={beach} alt=''></img>
                         <div className='explore-card-details'>
-                            <p>Batumi Beach <br></br>103km</p>
-                            <p>Grigoleti <br></br>86km</p>
-                            <p>Ureki <br></br>82km</p>
+                            <p>{t('explore.batumiBeach')} <br></br>103km</p>
+                            <p>{t('explore.grigoleti')} <br></br>86km</p>
+                            <p>{t('explore.ureki')} <br></br>82km</p>
                         </div>
                     </div>
 
@@ -65,12 +68,12 @@ const ExploreSection = () => {
                         onClick={() => handleClick(3)}
                     >
                         <div className='popup-Image-r'><img src={phMountains} alt="" /></div>
-                        <h4 className='explore-card-title'>Georgian Mountains</h4>
+                        <h4 className='explore-card-title'>{t('explore.2')}</h4>
                         <img className='icon' src={mountains} alt=''></img>
                         <div className='explore-card-details-r'>
-                            <p>Nabeghlavi <br></br>12km</p>
-                            <p>Bakhmaro <br></br>20km</p>
-                            <p>Gomismta <br></br>77km</p>
+                            <p>{t('explore.nabeglavi')} <br></br>12km</p>
+                            <p>{t('explore.bakmaro')} <br></br>20km</p>
+                            <p>{t('explore.gomismta')} <br></br>77km</p>
                         </div>
                     </div>
 
@@ -80,12 +83,12 @@ const ExploreSection = () => {
                         onClick={() => handleClick(2)}
                     >
                         <div className='popup-Image'><img src={phBatumi} alt="" /></div>
-                        <h4 className='explore-card-title'>Sightseeing</h4>
+                        <h4 className='explore-card-title'>{t('explore.3')}</h4>
                         <img className='icon' src={sightseeing} alt=''></img>
                         <div className='explore-card-details'>
-                            <p>Miniature park <br></br>79km</p>
-                            <p>Musicians park <br></br>76km</p>
-                            <p>Batumi City <br></br>12km</p>
+                            <p>{t('explore.minipark')} <br></br>79km</p>
+                            <p>{t('explore.musiciansPark')} <br></br>76km</p>
+                            <p>{t('explore.batumiCity')} <br></br>12km</p>
                         </div>
                     </div>
 
@@ -95,12 +98,12 @@ const ExploreSection = () => {
                         onClick={() => handleClick(4)}
                     >
                         <div className='popup-Image-r'><img src={phCuisine} alt="" /></div>
-                        <h4 className='explore-card-title'>Cuisine</h4>
+                        <h4 className='explore-card-title'>{t('explore.4')}</h4>
                         <img className='icon' src={cuisine} alt=''></img>
                         <div className='explore-card-details-r'>
-                            <p>Gurian Pie</p>
-                            <p>Brinjula - <br></br>Gurian crepe</p>
-                            <p>Beans with <br></br>Pkhali</p>
+                            <p>{t('explore.gurianPie')}</p>
+                            <p>{t('explore.brinjula1')} - <br></br>{t('explore.brinjula2')}</p>
+                            <p>{t('explore.beans1')} <br></br>{t('explore.beans2')}</p>
                         </div>
                     </div>
                 </div>

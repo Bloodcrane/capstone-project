@@ -1,10 +1,12 @@
 import "../Styles/Footer.css"
+import { useTranslation } from 'react-i18next';
 
 function Logo() {
+  const { t } = useTranslation();
 return (
     <div className="logo-container">
     <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/a34c02b9024f62d769913b63499274280d88fd408bccd49c90d3ad2f37fd643d?apiKey=8fb93ef11d1d48708e95df373a13e52c&" alt="Nostalgia logo" className="logo-img" />
-    <div className="title">Nostalgia</div>
+    <div className="title">{t('footer.title')}</div>
     </div>
 );
 }
@@ -38,6 +40,7 @@ return (
 }
 
 const SiteFooter = () => {
+  const { t } = useTranslation();
     return (
         <div className="container">
         <div className="content">
@@ -48,16 +51,16 @@ const SiteFooter = () => {
           <div className="right-section">
             <nav className="navigation">
               <div className="nav-group">
-              <div className="category-text">Guesthouse</div>
-                <NavItem section={'about-section'}>Our family</NavItem>
+              <div className="category-text">{t('footer.g')}</div>
+                <NavItem section={'about-section'}>{t('footer.about')}</NavItem>
               </div>
               <div className="nav-group">
-              <div className="category-text">Highlights</div>
-                <NavItem section={'activities-section'}>Activities</NavItem>
-                <NavItem section={'nearby-section'}>Nearby</NavItem>
+              <div className="category-text">{t('footer.h')}</div>
+                <NavItem section={'activities-section'}>{t('footer.activities')}</NavItem>
+                <NavItem section={'nearby-section'}>{t('footer.nearby')}</NavItem>
               </div>
               <div className="nav-group">
-                <div className="category-text">Connect</div>
+                <div className="category-text">{t('footer.connect')}</div>
                 <div className="social-icons">
                   <SocialIcon
                     src="https://cdn.builder.io/api/v1/image/assets/TEMP/ca986cbfea5675824de2d1b8f24e5b2c3c53b1643b361cab0c8fe94e787d4a72?apiKey=8fb93ef11d1d48708e95df373a13e52c&"

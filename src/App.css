@@ -9,16 +9,23 @@
   unicode-range: U+10A0-10FF;
 }
 
+.main.ge {
+    font-family: alk_life;
+}
+
 body{
   text-align: center;
   background-color: #FFF7E6;
-  font-family: "Fira Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
   background-repeat: no-repeat;
   background-size: cover;
   transition: all 0.3s;
   overflow-x: hidden;
+}
+
+.main {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .separator {

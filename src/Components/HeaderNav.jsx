@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from 'react-i18next';
 import '../Styles/HeaderNavigation.css';
@@ -30,63 +30,79 @@ const HeaderNav = () => {
     setShowMobileNav(!showMobileNav);
   };
 
+  const [isGeorgian, setIsGeorgian] = useState(i18n.language === 'ge');
+
+  useEffect(() => {
+    // Function to update the state when language changes
+    const handleLanguageChange = (lng) => {
+      setIsGeorgian(lng === 'ge');
+    };
+
+    // Set initial state based on the current language
+    handleLanguageChange(i18n.language);
+
+    // Subscribe to language change events
+    i18n.on('languageChanged', handleLanguageChange);
+
+    // Cleanup function to unsubscribe from language change events
+    return () => {
+      i18n.off('languageChanged', handleLanguageChange);
+    };
+  }, [i18n]);
+
   return (
-    <div>
+    <div className={`main ${isGeorgian ? 'ge' : ''}`}>
       {/* Desktop Structure */}
       {isDesktopOrLaptop && (
-        <header style={{ fontFamily: getFontFamily() }}>
-          <h3 className="pcLogo">Nostalgia</h3>
-          <nav>
-            <button className='nav-button-desktop' onClick={() => scrollToSection('rooms-section')}>{t('nav.rooms')}</button>
-            <button className='nav-button-desktop' onClick={() => scrollToSection('about-section')}>{t('nav.about')}</button>
-            <button className='nav-button-desktop' onClick={() => scrollToSection('activities-section')}>{t('nav.activities')}</button>
-            <button className='nav-button-desktop' onClick={() => scrollToSection('nearby-section')}>{t('nav.nearby')}</button>
-            <button className='nav-button-desktop' onClick={() => scrollToSection('contact-section')}>{t('nav.contact')}</button>
+        <header className={`header ${isGeorgian ? 'ge' : ''}`} style={{ fontFamily: getFontFamily() }}>
+          <h3 className={`pcLogo ${isGeorgian ? 'ge' : ''}`}>{t('footer.title')}</h3>
+          <nav className={`nav ${isGeorgian ? 'ge' : ''}`}>
+            <button className={`nav-button-desktop ${isGeorgian ? 'ge' : ''}`} onClick={() => scrollToSection('rooms-section')}>{t('nav.rooms')}</button>
+            <button className={`nav-button-desktop ${isGeorgian ? 'ge' : ''}`} onClick={() => scrollToSection('about-section')}>{t('nav.about')}</button>
+            <button className={`nav-button-desktop ${isGeorgian ? 'ge' : ''}`} onClick={() => scrollToSection('activities-section')}>{t('nav.activities')}</button>
+            <button className={`nav-button-desktop ${isGeorgian ? 'ge' : ''}`} onClick={() => scrollToSection('nearby-section')}>{t('nav.nearby')}</button>
+            <button className={`nav-button-desktop ${isGeorgian ? 'ge' : ''}`} onClick={() => scrollToSection('contact-section')}>{t('nav.contact')}</button>
           </nav>
           <div>
             <select id="language-dropdown" onChange={(e) => i18n.changeLanguage(e.target.value)}>
               <option value="en">ENG</option>
               <option value="ge">GEO</option>
             </select>
-            {/* <select id="currency-dropdown">
-              <option value="usd">USD</option>
-              <option value="gel">GEL</option>
-            </select> */}
           </div>
         </header>
       )}
 
       {/* Mobile Structure */}
       {isTabletOrMobile && (
-        <header style={{ fontFamily: getFontFamily() }}>
-          <nav>
-            <button className="mobileShowButton" onClick={toggleMobileNav}></button>
+        <header className={`header ${isGeorgian ? 'ge' : ''}`} style={{ fontFamily: getFontFamily() }}>
+          <nav className={`nav ${isGeorgian ? 'ge' : ''}`}>
+            <button className={`mobileShowButton ${isGeorgian ? 'ge' : ''}`} onClick={toggleMobileNav}></button>
             <div className={showMobileNav ? 'mobile-nav show' : 'mobile-nav'}>
-              <button className="mobileHideButton" onClick={toggleMobileNav}></button>
-              <button className="mobileCloseButton" onClick={toggleMobileNav}></button>
-              <div className='navButton-mobile' onClick={() => { scrollToSection('rooms-section'); toggleMobileNav() }}>
+              <button className={`mobileHideButton ${isGeorgian ? 'ge' : ''}`} onClick={toggleMobileNav}></button>
+              <button className={`mobileCloseButton ${isGeorgian ? 'ge' : ''}`} onClick={toggleMobileNav}></button>
+              <div className={`navButton-mobile ${isGeorgian ? 'ge' : ''}`} onClick={() => { scrollToSection('rooms-section'); toggleMobileNav() }}>
                 <img src={rooms_icon} alt="" />
                 <span>{t('nav.rooms')}</span>
               </div>
-              <div className='navButton-mobile' onClick={() => { scrollToSection('about-section'); toggleMobileNav() }}>
+              <div className={`navButton-mobile ${isGeorgian ? 'ge' : ''}`} onClick={() => { scrollToSection('about-section'); toggleMobileNav() }}>
                 <img src={about_icon} alt="" />
                 <span>{t('nav.about')}</span>
               </div>
-              <div className='navButton-mobile' onClick={() => { scrollToSection('activities-section'); toggleMobileNav() }}>
+              <div className={`navButton-mobile ${isGeorgian ? 'ge' : ''}`} onClick={() => { scrollToSection('activities-section'); toggleMobileNav() }}>
                 <img src={activities_icon} alt="" />
                 <span>{t('nav.activities')}</span>
               </div>
-              <div className='navButton-mobile' onClick={() => { scrollToSection('nearby-section'); toggleMobileNav() }}>
+              <div className={`navButton-mobile ${isGeorgian ? 'ge' : ''}`} onClick={() => { scrollToSection('nearby-section'); toggleMobileNav() }}>
                 <img src={nearby_icon} alt="" />
                 <span>{t('nav.nearby')}</span>
               </div>
-              <div className='navButton-mobile' onClick={() => { scrollToSection('contact-section'); toggleMobileNav() }}>
+              <div className={`navButton-mobile ${isGeorgian ? 'ge' : ''}`} onClick={() => { scrollToSection('contact-section'); toggleMobileNav() }}>
                 <img src={contact_icon} alt="" />
                 <span>{t('nav.contact')}</span>
               </div>
             </div>
           </nav>
-          <h3 className="mobileLogo">Nostalgia</h3>
+          <h3 className={`mobileLogo ${isGeorgian ? 'ge' : ''}`}>Nostalgia</h3>
           <div>
             <select id="language-dropdown" onChange={(e) => i18n.changeLanguage(e.target.value)}>
               <option value="en">ENG</option>

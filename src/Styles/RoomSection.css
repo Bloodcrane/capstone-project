@@ -41,6 +41,7 @@
     outline-width: 1px;
     outline-style: groove;
     border-radius: 16px;
+    color: #244135;
     box-shadow: 0px 4px 2px #C6D4B2;
     display: flex;
     flex-direction: column;
@@ -48,6 +49,13 @@
     align-items: center;
     gap: 25px;
     overflow: hidden;
+    transition: all 0.4s;
+}
+
+.room-card-desktop:hover {
+    background-color: #445e53;
+    color: #f1e9d6;
+    cursor: pointer;
 }
 
 .room-card-mobile {
@@ -97,7 +105,6 @@
     font-size: 18px;
     font-family: 'Fira Sans';
     font-weight: 400;
-    color: #244135;
     word-wrap: break-word;
 }
 
@@ -110,7 +117,6 @@
     font-size: 14px;
     font-family: 'Fira Sans';
     font-weight: 400;
-    color: #244135;
     word-wrap: break-word;
     margin-right: 5px;
 }
@@ -119,7 +125,6 @@
     font-size: 20px;
     font-family: 'Fira Sans';
     font-weight: 500;
-    color: #244135;
     word-wrap: break-word;
 }
 

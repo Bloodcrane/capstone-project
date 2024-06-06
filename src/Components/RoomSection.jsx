@@ -1,12 +1,14 @@
 import React from 'react';
 import Card from './Details/Card';
 import { useMediaQuery } from 'react-responsive';
+import { useTranslation } from 'react-i18next';
 import Slider from 'react-slick'; // Import Slider from react-slick
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../Styles/RoomSection.css";
 
 const RoomSection = () => {
+  const { t } = useTranslation();
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 1224px)'
   });
@@ -30,7 +32,7 @@ const RoomSection = () => {
   return (
     <div id="rooms-section" className="RoomsContainer">
       <div className="RContentWrapper">
-        <h1 className="RTitle">Rooms</h1>
+        <h1 className="RTitle">{t('rooms.title')}</h1>
         {isDesktopOrLaptop && (
           // Desktop Structure
           <section className='cardSection-desktop'>

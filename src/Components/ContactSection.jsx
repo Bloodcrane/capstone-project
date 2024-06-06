@@ -4,7 +4,10 @@ import emailjs from 'emailjs-com';
 import MapEmbed from './Details/MapEmbed';
 import '../Styles/ContactSection.css';
 
+import { useTranslation } from 'react-i18next';
+
 const ContactSection = () => {
+  const { t } = useTranslation();
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
   const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
 
@@ -24,26 +27,26 @@ const ContactSection = () => {
   return (
     <div>
       {/* Desktop Structure */}
-      <h1 className="CTitle">Contact Us</h1>
+      <h1 className="CTitle">{t('contact.title')}</h1>
       {isDesktopOrLaptop && (
         <section id='contact-section' className="contactSection-desktop">
           <div className='map-container-desktop'>
             <MapEmbed width={660}/>
           </div>
           <div className="contact-form">
-            <h2>Contact Us</h2>
-            <h4>Questions? Let's talk.</h4>
+            <h2>{t('contact.title')}</h2>
+            <h4>{t('contact.qa')}</h4>
             <form onSubmit={sendEmail}>
               <div className="form-group">
-                <input type="email" id="email" name="email" required placeholder="Your Email Here*" />
+                <input type="email" id="email" name="email" required placeholder={t('contact.email')} />
               </div>
               <div className="form-group">
-                <input type="tel" id="number" name="number" required placeholder="Your Number Here*" />
+                <input type="tel" id="number" name="number" required placeholder={t('contact.phone')} />
               </div>
               <div className="form-group">
-                <textarea id="message" name="message" required placeholder="Your Message Here*"></textarea>
+                <textarea id="message" name="message" required placeholder={t('contact.message')}></textarea>
               </div>
-              <button type="submit">Send Your Message!</button>
+              <button type="submit">{t('contact.submit')}</button>
             </form>
           </div>
         </section>
@@ -52,19 +55,19 @@ const ContactSection = () => {
       {isTabletOrMobile && (
         <section id='contact-section' className="contactSection-mobile">
           <div className="contact-form-mobile">
-            <h2>Contact Us</h2>
-            <h4>Questions? Let's talk.</h4>
+            <h2>{t('contact.title')}</h2>
+            <h4>{t('contact.qa')}</h4>
             <form onSubmit={sendEmail}>
               <div className="form-group">
-                <input type="email" id="email" name="email" required placeholder="Your Email Here*" />
+                <input type="email" id="email" name="email" required placeholder={t('contact.email')} />
               </div>
               <div className="form-group">
-                <input type="tel" id="number" name="number" required placeholder="Your Number Here*" />
+                <input type="tel" id="number" name="number" required placeholder={t('contact.phone')} />
               </div>
               <div className="form-group">
-                <textarea id="message" name="message" required placeholder="Your Message Here*"></textarea>
+                <textarea id="message" name="message" required placeholder={t('contact.message')}></textarea>
               </div>
-              <button type="submit">Send Your Message!</button>
+              <button type="submit">{t('contact.submit')}</button>
             </form>
           </div>
           <div className='map-container-mobile'>
