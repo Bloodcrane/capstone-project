@@ -23,7 +23,7 @@ const RoomSection = () => {
     variableWidth: true,
     centerMode: true,
     adaptiveHeight: true,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 5000
   };
 
