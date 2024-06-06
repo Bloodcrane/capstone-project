@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import axios from 'axios';
 import { AuthContext } from '../Context/AuthContext';
 
-const Admin = ({ updateRoomPrice }) => {
+const Admin = () => {
   const { auth, logout } = useContext(AuthContext);
   const [data, setData] = useState(null);
   const [error, setError] = useState('');
