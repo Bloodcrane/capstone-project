@@ -112,10 +112,46 @@ const ExploreSection = () => {
             {/* Mobile Structure */}
             {isTabletOrMobile && <>
                 <div className='explore-section-mobile'>
-                    <CollapsableCard id={1} isOpen={openCardId === 1} handleToggle={handleToggle} title='Sandy and rocky beaches' image={beach} textUpper='Batumi Beach 103km' textMiddle='Grigoleti 86km' textLower='Ureki 82km'/>
-                    <CollapsableCard id={2} isOpen={openCardId === 2} handleToggle={handleToggle} title='Georgian Mountains' image={mountains} textUpper='Nabeghlavi 12km' textMiddle='Bakhmaro 20km' textLower='Gomismta 77km'/>
-                    <CollapsableCard id={3} isOpen={openCardId === 3} handleToggle={handleToggle} title='Sightseeing' image={sightseeing} textUpper='Miniature park 79km' textMiddle='Musicians park 76km' textLower='Batumi City 12km'/>
-                    <CollapsableCard id={4} isOpen={openCardId === 4} handleToggle={handleToggle} title='Cuisine' image={cuisine} textUpper='Gurian Pie' textMiddle='Brinjula - Gurian crepe' textLower='Beans with Pkhali'/>
+                    <CollapsableCard
+                        id={1}
+                        isOpen={openCardId === 1}
+                        handleToggle={handleToggle}
+                        title={t('explore.1')}
+                        image={beach}
+                        textUpper={`${t('explore.batumiBeach')} 103km`}
+                        textMiddle={`${t('explore.grigoleti')} 86km`}
+                        textLower={`${t('explore.ureki')} 82km`}
+                    />
+                    <CollapsableCard
+                        id={2}
+                        isOpen={openCardId === 2}
+                        handleToggle={handleToggle}
+                        title={t('explore.2')}
+                        image={mountains}
+                        textUpper={`${t('explore.nabeglavi')} 12km`}
+                        textMiddle={`${t('explore.bakmaro')} 20km`}
+                        textLower={`${t('explore.gomismta')} 77km`}
+                    />
+                    <CollapsableCard
+                        id={3}
+                        isOpen={openCardId === 3}
+                        handleToggle={handleToggle}
+                        title={t('explore.3')}
+                        image={sightseeing}
+                        textUpper={`${t('explore.minipark')} 79km`}
+                        textMiddle={`${t('explore.musiciansPark')} 76km`}
+                        textLower={`${t('explore.batumiCity')} 12km`}
+                    />
+                    <CollapsableCard
+                        id={4}
+                        isOpen={openCardId === 4}
+                        handleToggle={handleToggle}
+                        title={t('explore.4')}
+                        image={cuisine}
+                        textUpper={t('explore.gurianPie')}
+                        textMiddle={`${t('explore.brinjula1')} - ${t('explore.brinjula2')}`}
+                        textLower={`${t('explore.beans1')} ${t('explore.beans2')}`}
+                    />
                 </div>
             </>}
         </div>

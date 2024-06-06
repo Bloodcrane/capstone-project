@@ -102,7 +102,7 @@ const HeaderNav = () => {
               </div>
             </div>
           </nav>
-          <h3 className={`mobileLogo ${isGeorgian ? 'ge' : ''}`}>Nostalgia</h3>
+          <h3 className={`mobileLogo ${isGeorgian ? 'ge' : ''}`}>{t('footer.title')}</h3>
           <div>
             <select id="language-dropdown" onChange={(e) => i18n.changeLanguage(e.target.value)}>
               <option value="en">ENG</option>

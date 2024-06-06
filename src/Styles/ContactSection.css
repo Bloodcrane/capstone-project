@@ -1,3 +1,9 @@
+@font-face {
+    font-family: alk_life;
+    src: url("../Styles/Fonts/alk_life.otf");
+    unicode-range: U+10A0-10FF;
+  }
+
 .contactSection-desktop {
     display: flex;
     justify-content: flex-end;
@@ -9,6 +15,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.contact-form.ge {
+    font-family: alk_life;
+}
+
+.gefont.ge{
+    font-family: alk_life;
+}
+
+.gefont-mobile.ge {
+    font-family: alk_life;
+    font-size: 39px;
+}
+
+.ge h3, .ge nav, .ge button, .ge div, .ge h2 {
+    font-family: alk_life;
 }
 
 .contact-form-mobile {
