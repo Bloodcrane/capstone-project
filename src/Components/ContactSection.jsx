@@ -51,7 +51,7 @@ const ContactSection = () => {
       {isDesktopOrLaptop && (
         <section id='contact-section' className="contactSection-desktop">
           <div className='map-container-desktop'>
-            <MapEmbed width={660}/>
+            <MapEmbed width={600}/>
           </div>
           <div className={`contact-form ${isGeorgian ? 'ge' : ''}`}>
             <h2 className={`gefont ${isGeorgian ? 'ge' : ''}`}>{t('contact.title')}</h2>

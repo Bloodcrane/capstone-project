@@ -125,8 +125,8 @@ button[type="submit"]:hover {
 }
 
 .map-container-desktop {
-    position: absolute;
-    left: 25px;
+    flex: 1; /* Allow the map to take the remaining space */
+    margin-right: 100px;
 }
 
 .google-map-desktop {
@@ -143,6 +143,8 @@ button[type="submit"]:hover {
 .map-iframe-desktop {
     border-radius: 15px;
     border-style: none;
+    margin: 0px auto;
+    padding-bottom: 15px;
 }
 
 .map-iframe-mobile {
@@ -152,14 +154,17 @@ button[type="submit"]:hover {
     max-width: 700px;
   }
 
-  @media screen and (max-width: 768px) {
-    .map-iframe-mobile {
-      width: 350px;
-    }
-  }
-  
-  @media screen and (min-width: 769px) {
-    .map-iframe-mobile {
-      width: 700px;
-    }
-  }
+@media screen and (max-width: 768px) {
+.map-iframe-mobile {
+    width: 350px;
+}
+}
+
+@media screen and (min-width: 769px) {
+.map-iframe-mobile {
+    width: 700px;
+}
+}
+
+
+
