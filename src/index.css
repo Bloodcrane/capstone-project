@@ -12,6 +12,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+@media (min-width: 1600px) {
+  body {
+    max-width: 1600px; /* Adjust the max-width as per your requirement */
+    margin: 0 auto; /* Center align the content on larger screens */
+  }
+}
+
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

@@ -25,6 +25,9 @@ backdrop-filter: blur(15px);
         opacity: auto;
         width: 1;
     }
+    .room-info-modal {
+        opacity: 1;
+    }
 }
 
 .modal-closed {
@@ -36,6 +39,9 @@ backdrop-filter: blur(15px);
     .modal-contact-button{
         opacity: 0;
         width: 0;
+    }
+    .room-info-modal {
+        opacity: 0;
     }
 }
 
