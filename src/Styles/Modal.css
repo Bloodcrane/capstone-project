@@ -4,7 +4,6 @@ position: fixed; /* Changed to fixed to cover the entire viewport */
 top: 0;
 left: 0;
 right: 0;
-bottom: 10%;
 height: 100%;
 display: flex;
 justify-content: center;
@@ -12,7 +11,8 @@ align-items: center;
 z-index: 1000; /* Ensure it is on top of all components */
 width: 0%;
 transition: all 0.5s;
-backdrop-filter: blur(15px);
+backdrop-filter: blur(5px);
+background-color: #fff8e98a;
 }
 
 .modal-open {
@@ -73,31 +73,15 @@ backdrop-filter: blur(15px);
   }
   
   .room-info-modal {
+    color:#244135;
     padding: 5px;
     position: absolute;
     top: 25px;
-    left: 57%;
-    transform: translateX(-50%);
+    margin-left: 500px;
     max-width: 90%; /* Ensures it doesn't exceed the image width */
     box-sizing: border-box;
   }
-  
-  @media (max-width: 1448px) {
-    .room-info-modal {
-      left: 60%;
-      transform: translateX(-50%);
-      max-width: 90%; /* Ensures it doesn't exceed the image width */
-    }
-  }
-  
-  @media (max-width: 1320px) {
-    .room-info-modal {
-      left: 62%;
-      transform: translateX(-50%);
-      max-width: 90%; /* Ensures it doesn't exceed the image width */
-    }
-  }
-  
+
 
 .modal-contact-button {
     margin-top: 20px;
@@ -122,6 +106,46 @@ backdrop-filter: blur(15px);
     bottom: 40px;
     right: 50%;
     left: 50%;
+}
+
+.room-type-modal {
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+
+.room-description-modal {
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.price-modal {
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.guests-modal {
+    background-image: url("../Styles/Images/Guests.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px 15px 15px;
+}
+
+.guests-modal span {
+    margin-left: 15px;
+    position: absolute;
+}
+
+.room-amenities-modal {
+    margin-top: 35px;
+    margin-left: -55px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.area-modal {
+    margin-top: 5px;
+    font-size: 20px;
 }
 
 .close-button {

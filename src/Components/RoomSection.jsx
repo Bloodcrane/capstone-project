@@ -75,16 +75,16 @@ const RoomSection = () => {
           <img className="room-image-modal" src={modalContent.Image} alt="RoomImage" />
           <div className="room-info-modal">
             <div className="room-type-modal">{t('rooms.doubleroom')}</div>
-            <label className='room-description-modal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+            <label className='room-description-modal'>Room Description</label>
             <div className="price-modal">
               <span className="price-value-modal">{modalContent.Price}</span>
             </div>
             <div className="room-amenities-modal">
-              <div className="guests-modal"></div>
-                <span>{modalContent.guests}</span>
               <div className="area-modal">
                 <span>{modalContent.Area}</span>
               </div>
+              <div className="guests-modal"></div>
+                <span>{modalContent.Guests}</span>
             </div>
           </div>
         </Modal>
