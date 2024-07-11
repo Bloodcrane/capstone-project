@@ -64,7 +64,6 @@ background-color: #fff8e98a;
 
 .room-image-modal {
     height: 95%;
-    width: 170%;
     image-rendering: optimizeQuality;
     border: 2px solid;
     border-color: #a0b1aa;
@@ -134,6 +133,7 @@ background-color: #fff8e98a;
     background-repeat: no-repeat;
     background-position: center;
     padding: 15px 15px 15px;
+    font-size: 20px;
 }
 
 .guests-modal span {
