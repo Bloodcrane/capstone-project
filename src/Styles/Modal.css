@@ -24,6 +24,7 @@ background-color: #fff8e98a;
     .modal-contact-button{
         opacity: auto;
         width: 1;
+        visibility: visible;
     }
     .room-info-modal {
         opacity: 1;
@@ -39,6 +40,7 @@ background-color: #fff8e98a;
     .modal-contact-button{
         opacity: 0;
         width: 0;
+        visibility: hidden;
     }
     .room-info-modal {
         opacity: 0;
