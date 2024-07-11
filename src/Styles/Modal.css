@@ -21,6 +21,10 @@ backdrop-filter: blur(15px);
     .modal{
         background-color: #FFF8E9;
     }
+    .modal-contact-button{
+        opacity: auto;
+        width: 1;
+    }
 }
 
 .modal-closed {
@@ -28,6 +32,10 @@ backdrop-filter: blur(15px);
     opacity: 0;
     .modal{
         background-color: #C6D4B2;
+    }
+    .modal-contact-button{
+        opacity: 0;
+        width: 0;
     }
 }
 
