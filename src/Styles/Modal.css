@@ -51,19 +51,39 @@ backdrop-filter: blur(15px);
 .room-image-modal {
     height: 95%;
     width: 170%;
-    image-rendering:optimizeQuality;
+    image-rendering: optimizeQuality;
     border: 2px solid;
     border-color: #a0b1aa;
     border-radius: 35px;
-}
-
-.room-info-modal {
+    position: relative;
+  }
+  
+  .room-info-modal {
     padding: 5px;
     position: absolute;
     top: 25px;
-    right: 60px;
-    left: 40%;
-}
+    left: 57%;
+    transform: translateX(-50%);
+    max-width: 90%; /* Ensures it doesn't exceed the image width */
+    box-sizing: border-box;
+  }
+  
+  @media (max-width: 1448px) {
+    .room-info-modal {
+      left: 60%;
+      transform: translateX(-50%);
+      max-width: 90%; /* Ensures it doesn't exceed the image width */
+    }
+  }
+  
+  @media (max-width: 1320px) {
+    .room-info-modal {
+      left: 62%;
+      transform: translateX(-50%);
+      max-width: 90%; /* Ensures it doesn't exceed the image width */
+    }
+  }
+  
 
 .modal-contact-button {
     margin-top: 20px;
