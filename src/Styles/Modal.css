@@ -28,6 +28,7 @@ background-color: #fff8e98a;
     }
     .room-info-modal {
         opacity: 1;
+        visibility: visible;
     }
 }
 
@@ -44,6 +45,7 @@ background-color: #fff8e98a;
     }
     .room-info-modal {
         opacity: 0;
+        visibility: hidden;
     }
 }
 
