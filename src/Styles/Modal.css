@@ -122,6 +122,11 @@ background-color: #fff8e98a;
 .price-modal {
     font-size: 25px;
     font-weight: 550;
+    position: absolute;
+    top: 50px;
+    right: 120px;
+    color: #244135;
+    font-size: 35px;
 }
 
 .guests-modal {

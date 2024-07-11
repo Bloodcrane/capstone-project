@@ -73,12 +73,12 @@ const RoomSection = () => {
       {modalContent && (
         <Modal show={modalContent !== null} onClose={handleCloseModal} className={modalContent.className}>
           <img className="room-image-modal" src={modalContent.Image} alt="RoomImage" />
+          <div className="price-modal">
+              <span className="price-value-modal">{modalContent.Price}</span>
+            </div>
           <div className="room-info-modal">
             <div className="room-type-modal">{t('rooms.doubleroom')}</div>
             <label className='room-description-modal'>Room Description</label>
-            <div className="price-modal">
-              <span className="price-value-modal">{modalContent.Price}</span>
-            </div>
             <div className="room-amenities-modal">
               <div className="area-modal">
                 <span>{modalContent.Area}</span>
