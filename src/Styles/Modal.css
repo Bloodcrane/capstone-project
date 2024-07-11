@@ -63,7 +63,8 @@ background-color: #fff8e98a;
 }
 
 .room-image-modal {
-    height: 95%;
+    height: 475px;
+    width: 475px;
     image-rendering: optimizeQuality;
     border: 2px solid;
     border-color: #a0b1aa;
