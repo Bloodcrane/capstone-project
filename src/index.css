@@ -16,6 +16,13 @@ body {
   body {
     max-width: 1600px; /* Adjust the max-width as per your requirement */
     margin: 0 auto; /* Center align the content on larger screens */
+    border: 2px solid;
+    border-color: #55645e;
+    z-index: 111;
+  }
+  header {
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
 
