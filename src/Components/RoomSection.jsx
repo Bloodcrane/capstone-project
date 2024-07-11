@@ -52,7 +52,7 @@ const RoomSection = () => {
             <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094270/Room1_dsuv5f.png' Price='$59' onCardClick={handleCardClick} Area="12m²" Guests="2"/>
             <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094318/Room2_cnoyzd.png' Price='$79' onCardClick={handleCardClick} Area="20m²" Guests="3"/>
             <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room3_hnqmmi.png' Price='$59' onCardClick={handleCardClick} Area="15m²" Guests="2"/>
-            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$59' onCardClick={handleCardClick} Area="20m²" Guests="2"/>
+            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$59' onCardClick={handleCardClick} Area="12m²" Guests="2"/>
           </section>
         )}
 
@@ -63,7 +63,7 @@ const RoomSection = () => {
                 <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094270/Room1_dsuv5f.png' Price='$59' onCardClick={handleCardClick} Area="12m²" Guests="2"/>
                 <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094318/Room2_cnoyzd.png' Price='$79' onCardClick={handleCardClick} Area="20m²" Guests="3"/>
                 <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room3_hnqmmi.png' Price='$59' onCardClick={handleCardClick} Area="15m²" Guests="2"/>
-                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$59' onCardClick={handleCardClick} Area="20m²" Guests="2"/>
+                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$59' onCardClick={handleCardClick} Area="12m²" Guests="2"/>
               </Slider>
             </div>
           </section>
