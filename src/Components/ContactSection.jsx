@@ -61,7 +61,7 @@ const ContactSection = () => {
                 <input type="email" id="email" name="email" required placeholder={t('contact.email')} />
               </div>
               <div className="form-group">
-                <input type="tel" id="number" name="number" required placeholder={t('contact.phone')} />
+                <input type="tel" id="number" name="number" placeholder={t('contact.phone')} />
               </div>
               <div className="form-group">
                 <textarea id="message" name="message" required placeholder={t('contact.message')}></textarea>

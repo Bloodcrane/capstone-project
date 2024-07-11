@@ -8848,6 +8848,11 @@ react-i18next@^14.1.1:
     "@babel/runtime" "^7.23.9"
     html-parse-stringify "^3.0.1"
 
+react-intersection-observer@^9.12.0:
+  version "9.12.0"
+  resolved "https://registry.yarnpkg.com/react-intersection-observer/-/react-intersection-observer-9.12.0.tgz#40498b13f6fc6fd311077369ee402f8219d5f006"
+  integrity sha512-KmczTRfcIg5hcmqFbb1fKPprT7AkOjj0ohUCs1iOwWe9BJPnC5nQ7dRX44z2W1jHiRt1uQST0AxGqWL6X8pN2A==
+
 react-is@^16.13.1, react-is@^16.7.0:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"

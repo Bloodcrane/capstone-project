@@ -49,10 +49,10 @@ const RoomSection = () => {
         <h1 className="RTitle">{t('rooms.title')}</h1>
         {isDesktopOrLaptop && (
           <section className='cardSection-desktop'>
-            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094270/Room1_dsuv5f.png' Price='$59' onCardClick={handleCardClick} />
-            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094318/Room2_cnoyzd.png' Price='$79' onCardClick={handleCardClick} />
-            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room3_hnqmmi.png' Price='$99' onCardClick={handleCardClick} />
-            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$119' onCardClick={handleCardClick} />
+            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094270/Room1_dsuv5f.png' Price='$59' onCardClick={handleCardClick} Area="12m²" guests="2"/>
+            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094318/Room2_cnoyzd.png' Price='$79' onCardClick={handleCardClick} Area="12m²" guests="2"/>
+            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room3_hnqmmi.png' Price='$99' onCardClick={handleCardClick} Area="15m²" guests="2"/>
+            <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$119' onCardClick={handleCardClick} Area="20m²" guests="2"/>
           </section>
         )}
 
@@ -60,10 +60,10 @@ const RoomSection = () => {
           <section className='cardSection-mobile'>
             <div className='slider-container'>
               <Slider {...mobileSettings}>
-                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094270/Room1_dsuv5f.png' Price='$59' onCardClick={handleCardClick} />
-                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094318/Room2_cnoyzd.png' Price='$79' onCardClick={handleCardClick} />
-                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room3_hnqmmi.png' Price='$99' onCardClick={handleCardClick} />
-                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$119' onCardClick={handleCardClick} />
+                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094270/Room1_dsuv5f.png' Price='$59' onCardClick={handleCardClick} Area="12m²" guests="2"/>
+                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094318/Room2_cnoyzd.png' Price='$79' onCardClick={handleCardClick} Area="12m²" guests="2"/>
+                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room3_hnqmmi.png' Price='$99' onCardClick={handleCardClick} Area="15m²" guests="2"/>
+                <Card Image='https://res.cloudinary.com/dja1ebgeq/image/upload/v1715094320/Room4_rn95nw.png' Price='$119' onCardClick={handleCardClick} Area="20m²" guests="2"/>
               </Slider>
             </div>
           </section>
@@ -72,16 +72,17 @@ const RoomSection = () => {
 
       {modalContent && (
         <Modal show={modalContent !== null} onClose={handleCloseModal} className={modalContent.className}>
-          <img className="room-image" src={modalContent.Image} alt="RoomImage" />
-          <div className="room-info">
-            <div className="room-type">{t('rooms.doubleroom')}</div>
-            <div className="price">
-              <span className="starting-from">{t('rooms.starting')}</span>
-              <span className="price-value">{modalContent.Price}</span>
+          <img className="room-image-modal" src={modalContent.Image} alt="RoomImage" />
+          <div className="room-info-modal">
+            <div className="room-type-modal">{t('rooms.doubleroom')}</div>
+            <label className='room-description-modal'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+            <div className="price-modal">
+              <span className="price-value-modal">{modalContent.Price}</span>
             </div>
-            <div className="room-amenities">
-              <div className="guests"></div>
-              <div className="area">
+            <div className="room-amenities-modal">
+              <div className="guests-modal"></div>
+                <span>{modalContent.guests}</span>
+              <div className="area-modal">
                 <span>{modalContent.Area}</span>
               </div>
             </div>

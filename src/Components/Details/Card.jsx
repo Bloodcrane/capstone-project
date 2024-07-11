@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import { useTranslation } from 'react-i18next';
 
-const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Area = "20m²", onCardClick }) => {
+const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Area = "20m²", onCardClick, Guests = "2" }) => {
   const isDesktopOrLaptop = useMediaQuery({ query: '(min-width: 1224px)' });
 
   const { t } = useTranslation();
@@ -43,7 +43,9 @@ const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Ar
           </div>
         </div>
         <div className="room-amenities">
-          <div className="guests"></div>
+          <div className="guests">
+            <span>{Guests}</span>
+          </div>
           <div className="area">
             <span>{Area}</span>
           </div>

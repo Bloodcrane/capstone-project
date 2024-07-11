@@ -5,10 +5,11 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
+    backdrop-filter: blur(10px);
   }
 
   @font-face {
@@ -79,7 +80,7 @@ header{
   }
 
   .nav-button-desktop {
-    margin: 13px 10px 0px;
+    margin: 4px 10px 0px;
     padding: 10px 20px 10px;
     border-radius: 5px;
     border-style: none;

@@ -70,7 +70,7 @@
     "submit": "Send Your Message!",
     "email": "Your Email Here*",
     "message": "Your Message Here*",
-    "phone": "Your Number Here*"
+    "phone": "Your Number Here"
   },
   "footer": {
     "title": "Nostalgia",

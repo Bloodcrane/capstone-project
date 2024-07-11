@@ -151,6 +151,11 @@
     padding: 15px 15px 15px;
 }
 
+.guests span {
+    margin-left: 15px;
+    position: absolute;
+}
+
 /* Change content when disabled */
 input:disabled + .slider:before {
     content: "$";
