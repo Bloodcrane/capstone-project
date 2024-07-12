@@ -11,8 +11,8 @@ align-items: center;
 z-index: 1000; /* Ensure it is on top of all components */
 width: 0%;
 transition: all 0.5s;
-backdrop-filter: blur(5px);
-background-color: #fff8e98a;
+backdrop-filter: blur(2px);
+background-color: #4953498a;
 }
 
 .modal-open {
