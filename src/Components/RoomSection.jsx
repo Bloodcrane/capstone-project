@@ -32,7 +32,7 @@ const RoomSection = () => {
   const mobileSettings = {
     dots: false,
     infinite: true,
-    arrows: true,
+    arrows: false,
     slidesToShow: 1,
     swipeToSlide: true,
     speed: 500,
