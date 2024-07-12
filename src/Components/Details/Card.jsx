@@ -27,7 +27,7 @@ const Card = ({ Image = "https://via.placeholder.com/260x270", Price = "$59", Ar
 
   return (
     <div className={`room-card ${cardClassName}`}>
-      <img className="room-image" onClick={handleCardClick} src={Image} alt="RoomImage" />
+      <img className="room-image" onClick={handleCardClick} src={Image} alt=" " />
       <div className="room-details">
         <div className="room-info">
           <div className="room-type" onClick={handleCardClick}>{t('rooms.doubleroom')}</div>
